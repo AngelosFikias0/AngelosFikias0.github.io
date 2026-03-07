@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="5" fill="#060910"/>
+
+  <!-- Subtle border -->
+  <rect width="32" height="32" rx="5" fill="none" stroke="#00ff88" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- > _ centered -->
+  <text
+    x="4"
+    y="22"
+    font-family="monospace"
+    font-size="14"
+    font-weight="bold"
+    fill="#00ff88"
+  >&#62; _</text>
+</svg>
