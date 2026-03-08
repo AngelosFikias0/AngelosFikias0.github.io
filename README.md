@@ -1,6 +1,8 @@
 # angelosfikias.dev
 
-Personal portfolio site. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step.
+Personal portfolio site for **Angelos Fikias** — Associate Platform Engineer at Dataviva.
+
+Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
 
 **Live:** [angelosfikias.dev](https://angelosfikias.dev)
 
@@ -10,7 +12,7 @@ Personal portfolio site. Built with vanilla HTML, CSS, and JavaScript — no fra
 
 - Pure HTML/CSS/JS — single file architecture
 - `data.js` — all content lives here, no need to touch `index.html`
-- Netlify — hosting and security headers
+- Netlify — hosting and security headers (A grade)
 - Cloudflare — domain and DNS
 
 ---
