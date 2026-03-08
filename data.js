@@ -111,7 +111,7 @@ window.SITE_DATA = {
       icon: "📊",
       name: "Observability & Testing",
       type: "tags",
-      items: ["Prometheus", "Grafana", "K6", "Playwright", "SRE"],
+      items: ["Prometheus", "Grafana", "Artillery", "K6", "Playwright", "SRE"],
     },
     {
       icon: "💻",
@@ -184,8 +184,19 @@ window.SITE_DATA = {
     {
       type: "platform tooling",
       name: "Cloud-Native E2E Performance Testing Tool",
-      desc: "Built a distributed end-to-end performance testing infrastructure for cloud-native workloads at Dataviva. Automated deployment pipelines with Docker, Helm, and GitHub Actions to run load tests at scale.",
-      stack: ["K6", "Docker", "Helm", "GitHub Actions", "Kubernetes"],
+      desc: "Distributed end-to-end volume and performance testing infrastructure for cloud-native workloads at Dataviva. Automated deployment pipelines with Python, JS, Docker, Helm, and GitHub Actions to run load and performance tests at scale across the platform.",
+      stack: [
+        "Kubernetes",
+        "Docker",
+        "Helm",
+        "GitHub Actions",
+        "Artillery",
+        "Playwright",
+        "Python",
+        "JavaScript",
+        "Bash",
+        "PowerShell",
+      ],
       github:
         "https://github.com/AngelosFikias0/Data_Structures_and_Algorithms",
     },
