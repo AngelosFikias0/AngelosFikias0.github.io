@@ -17,7 +17,7 @@ window.SITE_DATA = {
     github: "https://github.com/AngelosFikias0",
     linkedin: "https://www.linkedin.com/in/angelos-fikias/",
     status: "Building cool things",
-    focus: "Cloud Infrastructure · Automation · DevOps",
+    focus: " Platform Engineer · DevOps · Cloud Infrastructure",
     openTo: "Platform / SRE / DevOps roles",
   },
 
@@ -64,7 +64,7 @@ window.SITE_DATA = {
   about: {
     bio: [
       "I'm <b>Angelos Fikias</b>, a platform engineer based in Thessaloniki, Greece. I build and operate cloud and DevOps platforms designed for scale - connecting development, infrastructure, and automation to reduce friction across the entire software delivery lifecycle.",
-      "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cutting-edge AI-driven retail forecasting platform.",
+      "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cutting-edge AI-driven retail platform.",
       "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible - developers should never have to think about it.",
     ],
     stats: [
@@ -98,13 +98,13 @@ window.SITE_DATA = {
       name: "CI / CD & GitOps",
       type: "tags",
       items: [
+        "Python",
         "GitHub Actions",
         "ArgoCD",
         "Jenkins",
         "GitOps",
         "Bash",
         "PowerShell",
-        "Python",
       ],
     },
     {
@@ -184,7 +184,7 @@ window.SITE_DATA = {
     {
       type: "platform tooling",
       name: "Cloud-Native E2E Performance Testing Tool",
-      desc: "Distributed end-to-end volume and performance testing infrastructure for cloud-native workloads at Dataviva. Automated deployment pipelines with Python, JS, Docker, Helm, and GitHub Actions to run load and performance tests at scale across the platform.",
+      desc: "Built a distributed, end-to-end load and performance testing infrastructure for cloud-native workloads at Dataviva, enabling large-scale volume testing across the platform. The system leverages Artillery and Playwright for API and end-user workflow testing, with automation and orchestration implemented in Python and JavaScript. The testing stack is containerized with Docker and deployed via Helm on Kubernetes, while GitHub Actions integrates automated performance testing into CI pipelines. This infrastructure allows continuous validation of platform scalability, detects bottlenecks early, and ensures production readiness.",
       stack: [
         "Kubernetes",
         "Docker",

@@ -3491,7 +3491,7 @@
               desc: "cowsay [message]",
               usage: "cowsay [text]",
               run: (args) => {
-                const msg = args.join(" ") || "Kubernetes is life";
+                const msg = args.join(" ");
                 const len = msg.length + 2;
                 const border = "-".repeat(len);
                 sep();
