@@ -1,13 +1,4 @@
-/**
- * ============================================================
- *  ANGELOS FIKIAS - Site Data
- *  Edit this file to update any section of the website.
- *  The HTML reads everything from here - no other file to touch.
- * ============================================================
- */
-
 window.SITE_DATA = {
-  /* ── META ─────────────────────────────────────────────── */
   meta: {
     name: "Angelos Fikias",
     role: "Platform Engineer",
@@ -16,12 +7,11 @@ window.SITE_DATA = {
     email: "angelosfikias@gmail.com",
     github: "https://github.com/AngelosFikias0",
     linkedin: "https://www.linkedin.com/in/angelos-fikias/",
-    status: "Building cool things",
-    focus: " Platform Engineer · DevOps · Cloud Infrastructure",
+    status: "Shipping production infrastructure",
+    focus: "Platform Engineer · DevOps · Cloud Infrastructure",
     openTo: "Platform / SRE / DevOps roles",
   },
 
-  /* ── HERO terminal lines ──────────────────────────────── */
   terminal: [
     { type: "cmd", text: "cat whoami.json" },
     { type: "blank" },
@@ -44,10 +34,9 @@ window.SITE_DATA = {
     { type: "brace", text: "}" },
   ],
 
-  /* ── HERO copy ────────────────────────────────────────── */
   hero: {
-    headline: ["Building ", "platforms", " that\nmake engineers fly."],
-    sub: "I connect development, infrastructure and automation to reduce friction across the SDLC. Focused on cloud-native systems, Kubernetes, and long-term maintainability. I optimize for speed, reliability and growth.",
+    headline: ["Building ", "platforms", " that\nship with confidence."],
+    sub: "I connect development, infrastructure and automation to reduce friction across the SDLC. Focused on cloud-native systems, Kubernetes, and long-term maintainability.",
     ctas: [
       { label: "$ explore --projects", href: "#projects", style: "primary" },
       {
@@ -60,22 +49,20 @@ window.SITE_DATA = {
     ],
   },
 
-  /* ── ABOUT ────────────────────────────────────────────── */
   about: {
     bio: [
-      "I'm <b>Angelos Fikias</b>, a platform engineer based in Thessaloniki, Greece. I build and operate cloud and DevOps platforms designed for scale - connecting development, infrastructure, and automation to reduce friction across the entire software delivery lifecycle.",
-      "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cutting-edge AI-driven retail platform.",
-      "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible - developers should never have to think about it.",
+      "I'm <b>Angelos Fikias</b>, a platform engineer based in Thessaloniki, Greece. I build and operate cloud and DevOps platforms designed for scale — connecting development, infrastructure, and automation to reduce friction across the entire software delivery lifecycle.",
+      "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cloud-native AI-driven retail platform.",
+      "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible — developers should never have to think about it.",
     ],
     stats: [
-      { value: "3+", label: "Years Engineering" },
-      { value: "8+", label: "Projects Built" },
+      { value: "1+", label: "Years Professional" },
+      { value: "6+", label: "Projects Built" },
       { value: "Prod", label: "Infra Owner" },
-      { value: "Real", label: "Startup-Hardened" },
+      { value: "K8s", label: "Daily Driver" },
     ],
   },
 
-  /* ── STACK ────────────────────────────────────────────── */
   stack: [
     {
       icon: "☁️",
@@ -98,11 +85,11 @@ window.SITE_DATA = {
       name: "CI / CD & GitOps",
       type: "tags",
       items: [
-        "Python",
         "GitHub Actions",
         "ArgoCD",
         "Jenkins",
         "GitOps",
+        "Python",
         "Bash",
         "PowerShell",
       ],
@@ -111,7 +98,7 @@ window.SITE_DATA = {
       icon: "📊",
       name: "Observability & Testing",
       type: "tags",
-      items: ["Prometheus", "Grafana", "Artillery", "K6", "Playwright", "SRE"],
+      items: ["Prometheus", "Grafana", "Artillery", "Playwright", "MinIO", "SRE"],
     },
     {
       icon: "💻",
@@ -161,12 +148,31 @@ window.SITE_DATA = {
     },
   ],
 
-  /* ── PROJECTS ─────────────────────────────────────────── */
   projects: [
+    {
+      type: "platform tooling · production",
+      name: "Cloud-Native Browser Load Testing Platform",
+      desc: "Built the first distributed E2E load testing platform to run real Playwright browser sessions at scale on Kubernetes — replacing synthetic HTTP simulation with actual end-user workflows under full parallel load, orchestrated via Artillery. Owned the project end-to-end: architecture, implementation, client delivery, and production rollout. Architected a two-layer system with exact VU auto-splitting, wave-based execution, CSV batch injection, and six configurable load profiles. Includes a test generator with 35+ transformation rules, a visual verification suite with video capture, a zero-dependency reporting engine, and a native desktop GUI. Metrics flow through Prometheus and Grafana with SQLite regression tracking. Built and published via GitHub Actions to Azure Container Registry. Deployed to production at the highest concurrent real-browser VU count ever run on the system.",
+      stack: [
+        "Python",
+        "Artillery",
+        "Playwright",
+        "Kubernetes",
+        "Docker",
+        "Azure Container Registry",
+        "Prometheus",
+        "Grafana",
+        "MinIO",
+        "SQLite",
+        "GitHub Actions",
+        "JavaScript",
+      ],
+      github: "https://github.com/AngelosFikias0",
+    },
     {
       type: "enterprise · full-stack",
       name: "EfficienCity - Municipal Resource Management",
-      desc: "Enterprise municipal platform designed end-to-end across the full SDLC. Led stakeholder mapping, BPMN AS-IS/TO-BE modeling, and SWOT/MoSCoW analysis. Architected a microservices system on Azure AKS with Kafka event-driven comms, ClickHouse analytics, blockchain audit ledger (100% traceability, GDPR compliant), and a React + TypeScript MVP across three role-based interfaces.",
+      desc: "Enterprise municipal platform designed end-to-end across the full SDLC. Led stakeholder mapping, BPMN AS-IS/TO-BE modeling, and SWOT/MoSCoW analysis. Architected a microservices system on Azure AKS with Kafka event-driven communication, ClickHouse analytics, an immutable audit ledger for full traceability, and a React + TypeScript MVP across three role-based interfaces.",
       stack: [
         "React",
         "TypeScript",
@@ -180,25 +186,6 @@ window.SITE_DATA = {
         "Figma",
       ],
       github: "https://github.com/AngelosFikias0/Resource_Management_System",
-    },
-    {
-      type: "platform tooling",
-      name: "Cloud-Native E2E Performance Testing Tool",
-      desc: "Built a distributed, end-to-end load and performance testing infrastructure for cloud-native workloads at Dataviva, enabling large-scale volume testing across the platform. The system leverages Artillery and Playwright for API and end-user workflow testing, with automation and orchestration implemented in Python and JavaScript. The testing stack is containerized with Docker and deployed via Helm on Kubernetes, while GitHub Actions integrates automated performance testing into CI pipelines. This infrastructure allows continuous validation of platform scalability, detects bottlenecks early, and ensures production readiness.",
-      stack: [
-        "Kubernetes",
-        "Docker",
-        "Helm",
-        "GitHub Actions",
-        "Artillery",
-        "Playwright",
-        "Python",
-        "JavaScript",
-        "Bash",
-        "PowerShell",
-      ],
-      github:
-        "https://github.com/AngelosFikias0/Data_Structures_and_Algorithms",
     },
     {
       type: "distributed systems · backend",
@@ -217,7 +204,7 @@ window.SITE_DATA = {
     {
       type: "enterprise architecture",
       name: "SafeCar - Enterprise Insurance Platform",
-      desc: "Full-lifecycle insurance platform simulating digital transformation of proposals, contracts and claims. Applied TOGAF and Zachman frameworks to align software with business strategy; modeled workflows via BPMN and UML. Led team collaboration following SDLC best practices end-to-end.",
+      desc: "Full-lifecycle insurance platform modeling the digital transformation of proposals, contracts, and claims. Applied TOGAF and Zachman frameworks to align software design with business strategy. Modeled workflows via BPMN and UML. Led team collaboration following SDLC best practices end-to-end.",
       stack: ["Java", "TOGAF", "Zachman", "BPMN", "UML", "Figma", "OOAD"],
       github: "https://github.com/AngelosFikias0/Safe_car_insurance_System",
     },
@@ -252,28 +239,28 @@ window.SITE_DATA = {
     },
   ],
 
-  /* ── EXPERIENCE ───────────────────────────────────────── */
   experience: [
     {
       period: "JAN 2026 - PRESENT",
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Transitioned to full-time after internship - owning Kubernetes infrastructure, Docker & Helm deployments, CI/CD, observability and automation",
-        "Integrated APIs (JavaScript, Python) and modern tools into Kubernetes infrastructure and CI/CD workflows for scalable cloud-native environments",
-        "Developed a cloud-native E2E performance testing tool and automated deployment pipelines with Docker, Helm and GitHub Actions",
-        "Implemented observability with Prometheus and Grafana to improve reliability and monitor platform performance",
-        "Drove platform efficiency, maintainability and scalability across the SDLC in a cutting-edge agile startup",
+        "Built the first distributed E2E browser load testing platform on Kubernetes — real Playwright sessions at scale, wave-based execution, exact VU auto-splitting, and full observability stack. Deployed to production as first task.",
+        "Own Kubernetes infrastructure, Docker deployments, CI/CD pipelines, and observability stacks across the platform.",
+        "Automated image build and delivery pipelines via GitHub Actions to Azure Container Registry for air-gapped client deployments.",
+        "Implemented Prometheus and Grafana observability with ServiceMonitor, custom dashboards, and SQLite-backed regression tracking.",
+        "Drive platform efficiency, maintainability, and scalability across the SDLC in a fast-moving agile environment.",
       ],
       tags: [
         "Kubernetes",
         "Docker",
-        "Helm",
         "GitHub Actions",
         "Prometheus",
         "Grafana",
         "Azure",
         "Python",
+        "Artillery",
+        "Playwright",
       ],
     },
     {
@@ -281,12 +268,11 @@ window.SITE_DATA = {
       role: "DevOps Engineer Intern",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Developed and managed cloud-native infrastructure for an AI-driven retail forecasting platform",
-        "Operated and scaled Kubernetes clusters using Docker, Helm and Linux",
-        "Built distributed E2E performance testing infrastructure for cloud-native workloads",
-        "Integrated product analytics and automated processes with Bash and PowerShell",
-        "Developed APIs with JavaScript/Express and automated scripts with Python",
-        "Collaborated in Agile workflows, troubleshooting and resolving modern system challenges",
+        "Developed and managed cloud-native infrastructure for an AI-driven retail forecasting platform.",
+        "Operated and scaled Kubernetes clusters using Docker, Helm, and Linux.",
+        "Began building distributed E2E performance testing infrastructure — continued and shipped as full-time first task.",
+        "Built and automated internal tooling and scripts in Python and Bash.",
+        "Collaborated in Agile workflows across infrastructure, backend, and platform teams.",
       ],
       tags: [
         "Kubernetes",
@@ -313,7 +299,6 @@ window.SITE_DATA = {
     },
   ],
 
-  /* ── CERTIFICATIONS ───────────────────────────────────── */
   certifications: [
     {
       icon: "🔷",
@@ -377,7 +362,6 @@ window.SITE_DATA = {
     },
   ],
 
-  /* ── CONTACT ──────────────────────────────────────────── */
   contact: {
     intro:
       "Want to talk <b>Kubernetes internals, GitOps patterns, or cloud-native architecture</b>? Always happy to connect with engineers and teams building interesting things. Drop me a line.",
@@ -411,15 +395,14 @@ window.SITE_DATA = {
     ],
   },
 
-  /* ── SOFT SKILLS ──────────────────────────────────────── */
   softSkills: [
     "Agile Collaboration",
     "Critical Thinking",
     "Continuous Learning",
     "Project Ownership",
     "Cross-Functional Communication",
+    "Technical Communication",
     "Time Management",
-    "Leadership",
-    "Consulting",
+    "Stakeholder Management",
   ],
 };
