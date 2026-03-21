@@ -8,7 +8,7 @@ window.SITE_DATA = {
     github: "https://github.com/AngelosFikias0",
     linkedin: "https://www.linkedin.com/in/angelos-fikias/",
     status: "Shipping production infrastructure",
-    focus: "Platform Engineer · DevOps · Cloud Infrastructure",
+    focus: "Platform Engineering · DevOps · Cloud Infrastructure",
     openTo: "Platform / SRE / DevOps roles",
   },
 
@@ -23,7 +23,7 @@ window.SITE_DATA = {
     {
       type: "field",
       key: "focus",
-      value: "Cloud Infrastructure · Automation · DevOps",
+      value: "Platform Engineering · DevOps · Cloud Infrastructure",
     },
     {
       type: "field",
@@ -36,7 +36,7 @@ window.SITE_DATA = {
 
   hero: {
     headline: ["Building ", "platforms", " that\nship with confidence."],
-    sub: "I connect development, infrastructure and automation to reduce friction across the SDLC. Focused on cloud-native systems, Kubernetes, and long-term maintainability.",
+    sub: "Platform engineer focused on cloud-native infrastructure, automation, and scalable system architecture. I design and build platforms for high reliability, performance, and long-term evolution - end to end.",
     ctas: [
       { label: "$ explore --projects", href: "#projects", style: "primary" },
       {
@@ -51,9 +51,9 @@ window.SITE_DATA = {
 
   about: {
     bio: [
-      "I'm <b>Angelos Fikias</b>, a platform engineer based in Thessaloniki, Greece. I build and operate cloud and DevOps platforms designed for scale — connecting development, infrastructure, and automation to reduce friction across the entire software delivery lifecycle.",
+      "Platform engineer focused on cloud-native infrastructure, automation, and scalable system architecture. I design and build platforms for high reliability, performance, and long-term evolution - end to end.",
       "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cloud-native AI-driven retail platform.",
-      "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible — developers should never have to think about it.",
+      "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible.",
     ],
     stats: [
       { value: "1+", label: "Years Professional" },
