@@ -10,10 +10,10 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no d
 
 ## Stack
 
-- Pure HTML/CSS/JS — single file architecture
-- `data.js` — all content lives here, no need to touch `index.html`
-- Netlify — hosting and security headers (A grade)
-- Cloudflare — domain and DNS
+- Pure HTML/CSS/JS: single file architecture
+- `data.js`: all content lives here, no need to touch `index.html`
+- Netlify: hosting and security headers (A grade)
+- Cloudflare: domain and DNS
 
 ---
 
