@@ -1,7 +1,7 @@
 window.SITE_DATA = {
   meta: {
     name: "Angelos Fikias",
-    role: "Platform Engineer",
+    role: "Associate Platform Engineer",
     company: "Dataviva",
     location: "Thessaloniki, Greece",
     email: "angelosfikias@gmail.com",
@@ -9,7 +9,6 @@ window.SITE_DATA = {
     linkedin: "https://www.linkedin.com/in/angelos-fikias/",
     status: "Shipping production infrastructure",
     focus: "Platform Engineering · DevOps · Cloud Infrastructure",
-    openTo: "Platform / SRE / DevOps roles",
   },
 
   terminal: [
@@ -36,7 +35,7 @@ window.SITE_DATA = {
 
   hero: {
     headline: ["Building ", "platforms", " that\nship with confidence."],
-    sub: "Platform engineer focused on cloud-native infrastructure, automation, and scalable system architecture. I design and build platforms for high reliability, performance, and long-term evolution - end to end.",
+    sub: "I own cloud-native infrastructure end to end — Kubernetes, CI/CD, observability, and the automation that ties it together. Based in Thessaloniki, shipping to production.",
     ctas: [
       { label: "$ explore --projects", href: "#projects", style: "primary" },
       {
@@ -51,22 +50,23 @@ window.SITE_DATA = {
 
   about: {
     bio: [
-      "Platform engineer focused on cloud-native infrastructure, automation, and scalable system architecture. I design and build platforms for high reliability, performance, and long-term evolution - end to end.",
+      "I'm a platform engineer focused on building and operating the infrastructure that lets product teams ship reliably and fast. My work spans Kubernetes cluster ownership, CI/CD pipeline design, observability stacks, and automation tooling — from the first commit to production rollout.",
       "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cloud-native AI-driven retail platform.",
-      "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible.",
+      "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible — it's just the floor the whole team stands on.",
     ],
     stats: [
       { value: "1+", label: "Years Professional" },
-      { value: "6+", label: "Projects Built" },
+      { value: "4+", label: "Projects Built" },
       { value: "Prod", label: "Infra Owner" },
       { value: "K8s", label: "Daily Driver" },
     ],
   },
 
+  // Stack: 4 tight, focused categories — what actually matters for a platform engineer role
   stack: [
     {
       icon: "☁️",
-      name: "Cloud & Infrastructure",
+      name: "Platform & Cloud",
       type: "tags",
       items: [
         "Kubernetes",
@@ -74,15 +74,15 @@ window.SITE_DATA = {
         "Helm",
         "Terraform",
         "Ansible",
-        "Azure (Primary)",
-        "GCP (Exposure)",
-        "AWS (Foundations)",
+        "Azure",
+        "GCP",
+        "AWS",
         "Linux",
       ],
     },
     {
       icon: "⚙️",
-      name: "CI / CD & GitOps",
+      name: "CI/CD & Automation",
       type: "tags",
       items: [
         "GitHub Actions",
@@ -98,52 +98,26 @@ window.SITE_DATA = {
       icon: "📊",
       name: "Observability & Testing",
       type: "tags",
-      items: ["Prometheus", "Grafana", "Artillery", "Playwright", "MinIO", "SRE"],
+      items: [
+        "Prometheus",
+        "Grafana",
+        "Artillery",
+        "Playwright",
+        "MinIO",
+        "SRE",
+      ],
     },
     {
       icon: "💻",
-      name: "Core Proficiency",
+      name: "Languages & Proficiency",
       type: "bars",
       items: [
-        { label: "Kubernetes", pct: 90 },
+        { label: "Kubernetes / K8s", pct: 90 },
         { label: "Python", pct: 85 },
-        { label: "JavaScript", pct: 80 },
+        { label: "JavaScript / TS", pct: 80 },
         { label: "Java", pct: 75 },
         { label: "SQL", pct: 70 },
-        { label: "Azure", pct: 60 },
-      ],
-    },
-    {
-      icon: "🏗️",
-      name: "Architecture",
-      type: "tags",
-      items: [
-        "Cloud-Native Design",
-        "Microservices",
-        "Distributed Systems",
-        "RESTful APIs",
-        "Event-Driven",
-        "TOGAF",
-        "Zachman",
-        "BPMN",
-        "Solution Architecture",
-      ],
-    },
-    {
-      icon: "🔧",
-      name: "Dev & Data",
-      type: "tags",
-      items: [
-        "Spring Boot",
-        "Express.js",
-        "React",
-        "TypeScript",
-        "Kafka",
-        "PostgreSQL",
-        "MySQL",
-        "Android SDK",
-        "PHP",
-        "Apache",
+        { label: "Azure", pct: 65 },
       ],
     },
   ],
@@ -172,7 +146,7 @@ window.SITE_DATA = {
     {
       type: "enterprise · full-stack",
       name: "EfficienCity - Municipal Resource Management",
-      desc: "Enterprise municipal platform designed end-to-end across the full SDLC. Led stakeholder mapping, BPMN AS-IS/TO-BE modeling, and SWOT/MoSCoW analysis. Architected a microservices system on Azure AKS with Kafka event-driven communication, ClickHouse analytics, an immutable audit ledger for full traceability, and a React + TypeScript MVP across three role-based interfaces.",
+      desc: "Enterprise-grade municipal platform designed end-to-end from stakeholder analysis through cloud architecture, enabling inter-municipality asset sharing, real-time inventory tracking, and citizen-facing transparency. Led full systems analysis across the complete SDLC: stakeholder mapping, BPMN AS-IS/TO-BE modeling, Root Cause Analysis, SWOT, and MoSCoW prioritization. Designed a microservices system on Azure AKS with Kafka event-driven communication, multi-layer data pipeline across PostgreSQL and ClickHouse, and immutable audit ledger ensuring 100% transaction traceability and GDPR compliance. Delivered a React + TypeScript MVP across three role-based interfaces (Citizen, Municipal Employee, Administrator), designed in Figma with full UX journey documentation.",
       stack: [
         "React",
         "TypeScript",
@@ -188,30 +162,24 @@ window.SITE_DATA = {
       github: "https://github.com/AngelosFikias0/Resource_Management_System",
     },
     {
-      type: "distributed systems · backend",
-      name: "Java Network Services Hub",
-      desc: "Multi-protocol distributed service framework supporting HTTP, TCP, UDP, and RMI communication. Implements concurrent request handling with thread pooling and a Swing-based orchestration interface for unified service management.",
-      stack: [
-        "Java",
-        "Multi-threading",
-        "Sockets",
-        "RMI",
-        "PostgreSQL",
-        "Distributed Systems",
-      ],
-      github: "https://github.com/AngelosFikias0/Java_Network_Services_Hub",
-    },
-    {
       type: "enterprise architecture",
       name: "SafeCar - Enterprise Insurance Platform",
-      desc: "Full-lifecycle insurance platform modeling the digital transformation of proposals, contracts, and claims. Applied TOGAF and Zachman frameworks to align software design with business strategy. Modeled workflows via BPMN and UML. Led team collaboration following SDLC best practices end-to-end.",
-      stack: ["Java", "TOGAF", "Zachman", "BPMN", "UML", "Figma", "OOAD"],
+      desc: "Enterprise insurance platform managing the full policy lifecycle from proposals through claims. Modeled the digital transformation of insurance processes end-to-end. Applied TOGAF and Zachman frameworks to align software architecture with business strategy. Defined role-based access and automated workflows. Led team collaboration delivering an enterprise-grade solution following SDLC best practices end-to-end.",
+      stack: [
+        "Java",
+        "TOGAF",
+        "Zachman",
+        "BPMN",
+        "UML",
+        "Figma",
+        "Enterprise Architecture",
+      ],
       github: "https://github.com/AngelosFikias0/Safe_car_insurance_System",
     },
     {
       type: "mobile + backend",
       name: "TikiPark - Real-Time Smart Parking",
-      desc: "Offline-first Android app with real-time slot synchronization, Google Maps integration, and SQLite caching for full network resilience. Modular backend with RBAC (Admin/User/Guest) and RESTful APIs ready for payment gateway extension.",
+      desc: "Smart Android parking assistant solving urban parking challenges with real-time slot availability, offline-first architecture, and seamless Google Maps integration. Architected offline-first system maintaining full functionality during network interruptions. Implemented RBAC with Admin/User/Guest tiers across a modular authentication system. Designed modular backend with RESTful APIs ready for payment gateway integration.",
       stack: [
         "Java",
         "Android SDK",
@@ -222,20 +190,6 @@ window.SITE_DATA = {
         "REST",
       ],
       github: "https://github.com/AngelosFikias0/TikiPark",
-    },
-    {
-      type: "data engineering · graph analysis",
-      name: "Crime Intelligence - Network Analysis Platform",
-      desc: "Graph-based investigative intelligence platform using the JUNG library and advanced graph theory. Computes centrality metrics (betweenness, closeness, degree) to identify key suspects and uncover criminal relationship patterns.",
-      stack: [
-        "Java",
-        "JUNG",
-        "Graph Theory",
-        "Swing",
-        "Data Visualization",
-        "MVC",
-      ],
-      github: "https://github.com/AngelosFikias0/Crime_Management_System",
     },
   ],
 
@@ -299,7 +253,9 @@ window.SITE_DATA = {
     },
   ],
 
+  // Full cert list from LinkedIn, grouped and ordered by relevance: cloud/k8s first, then devops, then architecture/agile, then other
   certifications: [
+    // ── Cloud & Kubernetes ──
     {
       icon: "🔷",
       name: "Azure Fundamentals (AZ-900)",
@@ -319,6 +275,37 @@ window.SITE_DATA = {
       date: "Nov 2025",
     },
     {
+      icon: "🟠",
+      name: "Serverless Fundamentals",
+      issuer: "AWS",
+      date: "Oct 2025",
+    },
+    {
+      icon: "☁️",
+      name: "Cloud Architecture: Core Concepts",
+      issuer: "LinkedIn",
+      date: "Sep 2025",
+    },
+    {
+      icon: "☁️",
+      name: "Google Cloud Data and Storage Foundations",
+      issuer: "Google / LinkedIn",
+      date: "Sep 2025",
+    },
+    {
+      icon: "☁️",
+      name: "A Beginner's Guide to Public Cloud Options",
+      issuer: "LinkedIn",
+      date: "Sep 2025",
+    },
+    // ── DevOps & CI/CD ──
+    {
+      icon: "🔔",
+      name: "DevOps Professional",
+      issuer: "PagerDuty",
+      date: "Sep 2025",
+    },
+    {
       icon: "🔄",
       name: "Intro to CD & GitOps using Argo CD",
       issuer: "Akuity",
@@ -331,23 +318,49 @@ window.SITE_DATA = {
       date: "Nov 2025",
     },
     {
-      icon: "🟠",
-      name: "Serverless Fundamentals",
-      issuer: "AWS",
-      date: "Oct 2025",
-    },
-    {
-      icon: "🔔",
-      name: "DevOps Professional",
-      issuer: "PagerDuty",
-      date: "Sep 2025",
-    },
-    {
       icon: "🔄",
       name: "DevOps Foundations: CI/CD",
       issuer: "CompTIA",
       date: "Sep 2025",
     },
+    {
+      icon: "🔄",
+      name: "DevOps Foundations: Infrastructure as Code",
+      issuer: "LinkedIn",
+      date: "Sep 2025",
+    },
+    {
+      icon: "🔄",
+      name: "DevOps Foundations: Site Reliability Engineering",
+      issuer: "LinkedIn",
+      date: "Sep 2025",
+    },
+    {
+      icon: "🔄",
+      name: "DevOps Foundations",
+      issuer: "LinkedIn",
+      date: "Aug 2025",
+    },
+    // ── Architecture ──
+    {
+      icon: "🏗️",
+      name: "Software Architecture Foundations",
+      issuer: "LinkedIn",
+      date: "Aug 2025",
+    },
+    {
+      icon: "🏗️",
+      name: "Enterprise Architecture Foundations",
+      issuer: "LinkedIn",
+      date: "Aug 2025",
+    },
+    {
+      icon: "🤖",
+      name: "GenAI and Predictive AI Architecture Foundations",
+      issuer: "LinkedIn",
+      date: "Sep 2025",
+    },
+    // ── Agile & PM ──
     {
       icon: "📋",
       name: "Agile Project Management Professional",
@@ -355,17 +368,101 @@ window.SITE_DATA = {
       date: "Sep 2025",
     },
     {
+      icon: "📋",
+      name: "Scrum: The Basics",
+      issuer: "Project Management Institute",
+      date: "Sep 2025",
+    },
+    {
+      icon: "📋",
+      name: "Agile Foundations",
+      issuer: "IIBA",
+      date: "Sep 2025",
+    },
+    {
+      icon: "📋",
+      name: "Agile Explorer",
+      issuer: "IBM",
+      date: "Aug 2025",
+    },
+    {
+      icon: "📋",
+      name: "Learning ITIL",
+      issuer: "CompTIA",
+      date: "Sep 2025",
+    },
+    {
+      icon: "📋",
+      name: "Consulting Foundations",
+      issuer: "Project Management Institute",
+      date: "Sep 2025",
+    },
+    {
+      icon: "📋",
+      name: "Effectively Leading Digital Transformation",
+      issuer: "IIBA",
+      date: "Sep 2025",
+    },
+    {
+      icon: "📋",
+      name: "Enterprise Design Thinking Practitioner",
+      issuer: "IBM",
+      date: "Aug 2025",
+    },
+    // ── Security & Other ──
+    {
       icon: "🔐",
       name: "Introduction to Cybersecurity",
       issuer: "Cisco",
       date: "Aug 2025",
+    },
+    {
+      icon: "☕",
+      name: "Oracle Java Foundations",
+      issuer: "Oracle",
+      date: "Aug 2025",
+    },
+    {
+      icon: "📊",
+      name: "Data Fundamentals",
+      issuer: "IBM",
+      date: "Aug 2025",
+    },
+    {
+      icon: "💰",
+      name: "Introduction to Risk Management",
+      issuer: "Project Management Institute",
+      date: "Sep 2025",
+    },
+    {
+      icon: "💰",
+      name: "Corporate Finance Foundations",
+      issuer: "NASBA",
+      date: "Sep 2025",
+    },
+    {
+      icon: "💰",
+      name: "Fintech Masterclass",
+      issuer: "CFTE",
+      date: "Sep 2025",
+    },
+    {
+      icon: "🔗",
+      name: "Introduction to Blockchain and Smart Contracts",
+      issuer: "IEEE",
+      date: "May 2025",
+    },
+    {
+      icon: "☕",
+      name: "jPrime Java Conference",
+      issuer: "jPrime",
+      date: "Apr 2025",
     },
   ],
 
   contact: {
     intro:
       "Want to talk <b>Kubernetes internals, GitOps patterns, or cloud-native architecture</b>? Always happy to connect with engineers and teams building interesting things. Drop me a line.",
-    openTo: [],
     languages: [
       { lang: "Greek", level: "Native" },
       { lang: "English", level: "C2 Proficiency" },

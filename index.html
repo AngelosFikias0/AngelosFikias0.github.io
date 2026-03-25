@@ -1866,12 +1866,123 @@
       }
     }
 
+    /* ── MOBILE NAV ── */
+    #nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: transparent;
+      border: 1px solid var(--border2);
+      border-radius: 5px;
+      padding: 7px 9px;
+      cursor: none;
+      transition: border-color 0.2s;
+    }
+
+    #nav-toggle:hover {
+      border-color: var(--g);
+    }
+
+    #nav-toggle span {
+      display: block;
+      width: 18px;
+      height: 1.5px;
+      background: var(--m3);
+      border-radius: 1px;
+      transition: all 0.25s var(--ease-out-expo);
+    }
+
+    #nav-toggle.open span:nth-child(1) {
+      transform: translateY(5.5px) rotate(45deg);
+      background: var(--g);
+    }
+
+    #nav-toggle.open span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    #nav-toggle.open span:nth-child(3) {
+      transform: translateY(-5.5px) rotate(-45deg);
+      background: var(--g);
+    }
+
+    #mobile-menu {
+      display: none;
+      position: fixed;
+      top: 54px;
+      left: 0;
+      right: 0;
+      background: rgba(6, 9, 16, 0.97);
+      backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid var(--border);
+      z-index: 499;
+      padding: 0.5rem 1.2rem 1rem;
+      transform: translateY(-8px);
+      opacity: 0;
+      transition: transform 0.25s var(--ease-out-expo), opacity 0.25s;
+      pointer-events: none;
+    }
+
+    #mobile-menu.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    #mobile-menu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #mobile-menu li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.7rem 0.5rem;
+      color: var(--m2);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s, padding-left 0.2s;
+    }
+
+    #mobile-menu li:last-child a {
+      border-bottom: none;
+    }
+
+    #mobile-menu li a:hover {
+      color: var(--g);
+      padding-left: 0.9rem;
+    }
+
+    #mobile-menu li a::before {
+      content: "›";
+      color: var(--g);
+      font-size: 14px;
+    }
+
     @media (max-width: 768px) {
       nav {
         padding: 0 1.2rem;
       }
 
       .n-links {
+        display: none;
+      }
+
+      #nav-toggle {
+        display: flex;
+      }
+
+      #mobile-menu {
+        display: block;
+      }
+
+      #term-trigger kbd {
         display: none;
       }
 
@@ -1923,10 +2034,26 @@
       <li><a href="#certs">Certs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="term-trigger" title="Open terminal (Ctrl+`)">
-      <span class="t-ico">_</span> terminal <kbd>Ctrl+`</kbd>
-    </button>
+    <div style="display:flex;align-items:center;gap:0.7rem">
+      <button id="term-trigger" title="Open terminal (Ctrl+`)">
+        <span class="t-ico">_</span> terminal <kbd>Ctrl+`</kbd>
+      </button>
+      <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
   <!-- TERMINAL OVERLAY -->
   <div id="term-overlay" role="dialog" aria-modal="true" aria-label="Interactive Terminal">
@@ -2026,6 +2153,7 @@
           </div>
           <div class="rv" style="transition-delay: 0.12s">
             <div class="stats" id="about-stats"></div>
+            <div id="soft-skills-wrap" style="margin-top:1.4rem"></div>
           </div>
         </div>
       </div>
@@ -2273,7 +2401,7 @@
           i === 1 ? `<span class="g" data-text="${p}">${p}</span>` : p,
         )
         .join("");
-      document.getElementById("hero-sub").textContent = hero.sub;
+      document.getElementById("hero-sub").textContent = "I own cloud-native infrastructure end to end — Kubernetes, CI/CD, observability, and the automation that ties it together. Based in Thessaloniki, shipping to production.";
       const ctasEl = document.getElementById("hero-ctas");
       hero.ctas.forEach((cta) => {
         const a = document.createElement("a");
@@ -2302,6 +2430,22 @@
           ),
         ),
       );
+      // Render soft skills
+      if (D.softSkills && D.softSkills.length) {
+        const sw = document.getElementById("soft-skills-wrap");
+        const ssCard = el("div", "card");
+        ssCard.innerHTML = `<div class="card-h"><div class="led"></div>soft_skills.json</div>`;
+        const ssBody = el("div", "");
+        ssBody.style.cssText = "padding:0.9rem 1.1rem;display:flex;flex-wrap:wrap;gap:7px;";
+        D.softSkills.forEach((s) => {
+          const t = el("span", "tag");
+          t.style.cssText = "background:rgba(0,212,255,0.055);border-color:rgba(0,212,255,0.14);color:var(--cd);";
+          t.textContent = s;
+          ssBody.appendChild(t);
+        });
+        ssCard.appendChild(ssBody);
+        sw.appendChild(ssCard);
+      }
 
       /* ═══════════════════════════════════════
      STACK
@@ -2394,33 +2538,24 @@
       const certCategories = [
         { label: "All", match: () => true },
         {
-          label: "Cloud & Infra",
-          match: (c) => /cloud|kubernetes|serverless|storage/i.test(c.name),
+          label: "Cloud & K8s",
+          match: (c) => /cloud|kubernetes|serverless|azure|gcp|aws|google/i.test(c.name + " " + c.issuer),
         },
         {
           label: "DevOps & CI/CD",
-          match: (c) =>
-            /devops|jenkins|argo|gitops|ci.?cd|infrastructure as code|sre/i.test(
-              c.name,
-            ),
+          match: (c) => /devops|jenkins|argo|gitops|ci.?cd|infrastructure as code|sre|site reliability/i.test(c.name),
         },
         {
           label: "Architecture",
-          match: (c) =>
-            /architect|enterprise|digital transformation|consulting|genai/i.test(
-              c.name,
-            ),
+          match: (c) => /architect|genai|predictive ai/i.test(c.name),
         },
         {
           label: "Agile & PM",
-          match: (c) => /agile|scrum|itil|design thinking/i.test(c.name),
+          match: (c) => /agile|scrum|itil|consulting|digital transformation|design thinking|explorer/i.test(c.name),
         },
         {
           label: "Other",
-          match: (c) =>
-            /finance|fintech|risk|data|cybersecurity|java|blockchain|jprime/i.test(
-              c.name,
-            ),
+          match: (c) => /finance|fintech|risk|data|cybersecurity|java|blockchain|jprime/i.test(c.name),
         },
       ];
       const cf = document.getElementById("certs-filter");
@@ -2479,9 +2614,11 @@
         if (lnk.href.startsWith("mailto:")) {
           lnk.addEventListener("click", (e) => {
             e.preventDefault();
+            const addr = lnk.href.replace("mailto:", "");
             navigator.clipboard
-              .writeText(lnk.href.replace("mailto:", ""))
-              .then(() => showToast("✓ Email copied to clipboard"));
+              .writeText(addr)
+              .then(() => showToast("✓ Email copied to clipboard"))
+              .catch(() => { window.location.href = "mailto:" + addr; });
           });
         }
       });
@@ -2518,7 +2655,7 @@
         "@type": "Person",
         name: meta.name,
         url: "https://angelosfikias.dev",
-        jobTitle: "Associate Platform Engineer",
+        jobTitle: meta.role,
         worksFor: { "@type": "Organization", name: meta.company },
         address: {
           "@type": "PostalAddress",
@@ -2729,6 +2866,13 @@
             draw();
           }
         });
+        // Pause when hero scrolls out of view to save CPU/battery
+        new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) { draw(); }
+            else { cancelAnimationFrame(rafId); }
+          });
+        }, { threshold: 0 }).observe(document.getElementById("hero"));
       })();
 
       /* SPOTLIGHT */
@@ -3118,6 +3262,10 @@
                 `<span class="hl-g">↪</span> navigated to <span class="hl-c">${currentDir}</span>`,
                 "suc",
               );
+              // Also scroll to the section
+              const _secId = mapped === "~" ? "hero" : mapped;
+              const _secEl = document.getElementById(_secId);
+              if (_secEl) setTimeout(() => _secEl.scrollIntoView({ behavior: "smooth" }), 300);
             },
           },
 
@@ -3635,12 +3783,12 @@
             desc: "cowsay [message]",
             usage: "cowsay [text]",
             run: (args) => {
-              const msg = args.join(" ") || "moo";  // fallback
-              const len = msg.length + 2;
-              const border = "-".repeat(len);
+              const msg = args.join(" ") || "moo";
+              const safeMsg = msg.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+              const border = "-".repeat(msg.length + 2);
               sep();
               line(`&nbsp;${border}`);
-              line(`&lt; ${msg} &gt;`);
+              line(`&lt; ${safeMsg} &gt;`);
               line(`&nbsp;${border}`);
               line(
                 "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\&nbsp;&nbsp;&nbsp;^__^",
@@ -3902,6 +4050,39 @@
 
       /* ── RE-ATTACH cursor hover on dynamic elements ── */
       setTimeout(attachCursorHover, 1000);
+
+      /* ── MOBILE NAV TOGGLE ── */
+      (function () {
+        const navToggle = document.getElementById("nav-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (!navToggle || !mobileMenu) return;
+        navToggle.addEventListener("click", () => {
+          const isOpen = mobileMenu.classList.toggle("open");
+          navToggle.classList.toggle("open", isOpen);
+          navToggle.setAttribute("aria-expanded", isOpen);
+        });
+        mobileMenu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+            navToggle.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+        document.addEventListener("click", (e) => {
+          if (!navToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.remove("open");
+            navToggle.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      })();
+
+      /* ── HIDE CUSTOM CURSOR ON TOUCH DEVICES ── */
+      if (window.matchMedia("(pointer: coarse)").matches) {
+        document.getElementById("cur").style.display = "none";
+        document.getElementById("cur2").style.display = "none";
+        document.body.style.cursor = "auto";
+      }
     })();
   </script>
 </body>
