@@ -62,11 +62,19 @@ window.SITE_DATA = {
     ],
   },
 
-  // Stack: 4 tight, focused categories — what actually matters for a platform engineer role
+  // Stack: main stack highlights + detailed categories
+  mainStack: [
+    "Kubernetes",
+    "Docker",
+    "Azure",
+    "CI/CD",
+    "Java",
+  ],
+
   stack: [
     {
       icon: "☁️",
-      name: "Platform & Cloud",
+      name: "Cloud & Infrastructure",
       type: "tags",
       items: [
         "Kubernetes",
@@ -82,42 +90,56 @@ window.SITE_DATA = {
     },
     {
       icon: "⚙️",
-      name: "CI/CD & Automation",
+      name: "CI/CD & GitOps",
       type: "tags",
       items: [
         "GitHub Actions",
         "ArgoCD",
         "Jenkins",
         "GitOps",
+        "Azure Container Registry",
+      ],
+    },
+    {
+      icon: "📊",
+      name: "Observability & Data",
+      type: "tags",
+      items: [
+        "Prometheus",
+        "Grafana",
+        "SQLite",
+        "PostgreSQL",
+        "ClickHouse",
+        "Kafka",
+        "MinIO",
+        "SRE",
+      ],
+    },
+    {
+      icon: "🧪",
+      name: "Testing & Automation",
+      type: "tags",
+      items: [
+        "Artillery",
+        "Playwright",
         "Python",
         "Bash",
         "PowerShell",
       ],
     },
     {
-      icon: "📊",
-      name: "Observability & Testing",
+      icon: "💻",
+      name: "Languages & Frameworks",
       type: "tags",
       items: [
-        "Prometheus",
-        "Grafana",
-        "Artillery",
-        "Playwright",
-        "MinIO",
-        "SRE",
-      ],
-    },
-    {
-      icon: "💻",
-      name: "Languages & Proficiency",
-      type: "bars",
-      items: [
-        { label: "Kubernetes / K8s", pct: 90 },
-        { label: "Python", pct: 85 },
-        { label: "JavaScript / TS", pct: 80 },
-        { label: "Java", pct: 75 },
-        { label: "SQL", pct: 70 },
-        { label: "Azure", pct: 65 },
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "SQL",
+        "Bash",
+        "React",
+        "Spring Boot",
       ],
     },
   ],
@@ -126,7 +148,7 @@ window.SITE_DATA = {
     {
       type: "platform tooling · production",
       name: "Cloud-Native Browser Load Testing Platform",
-      desc: "Built the first distributed E2E load testing platform to run real Playwright browser sessions at scale on Kubernetes — replacing synthetic HTTP simulation with actual end-user workflows under full parallel load, orchestrated via Artillery. Owned the project end-to-end: architecture, implementation, client delivery, and production rollout. Architected a two-layer system with exact VU auto-splitting, wave-based execution, CSV batch injection, and six configurable load profiles. Includes a test generator with 35+ transformation rules, a visual verification suite with video capture, a zero-dependency reporting engine, and a native desktop GUI. Metrics flow through Prometheus and Grafana with SQLite regression tracking. Built and published via GitHub Actions to Azure Container Registry. Deployed to production at the highest concurrent real-browser VU count ever run on the system.",
+      desc: "Built the first distributed E2E load testing platform to run real Playwright browser sessions at scale on Kubernetes — replacing synthetic HTTP simulation with actual end-user workflows under full parallel load, orchestrated via Artillery. Owned the project end-to-end: architecture, implementation, client delivery, and production rollout. Architected a two-layer system with exact VU auto-splitting, wave-based execution, CSV batch injection, and six configurable load profiles. The platform includes an intelligent test generator powered by a Python engine and a structured JSON knowledge base: it detects and auto-fixes 35+ known Angular E2E pitfalls (timing issues, dynamic selectors, async rendering edge cases), and for patterns that cannot be resolved automatically, it surfaces targeted guidance — rewriting the problem, explaining the root cause, and providing testers with actionable steps toward stable, reliable implementations. Includes a visual verification suite with video capture, a zero-dependency reporting engine, and a native desktop GUI. Metrics flow through Prometheus and Grafana with SQLite regression tracking. Built and published via GitHub Actions to Azure Container Registry. Deployed to production at the highest concurrent real-browser VU count ever run on the system.",
       stack: [
         "Python",
         "Artillery",
@@ -140,6 +162,7 @@ window.SITE_DATA = {
         "SQLite",
         "GitHub Actions",
         "JavaScript",
+        "JSON",
       ],
       github: "https://github.com/AngelosFikias0",
     },
@@ -199,7 +222,7 @@ window.SITE_DATA = {
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Built the first distributed E2E browser load testing platform on Kubernetes — real Playwright sessions at scale, wave-based execution, exact VU auto-splitting, and full observability stack. Deployed to production as first task.",
+        "Built the first distributed E2E browser load testing platform on Kubernetes — real Playwright sessions at scale, exact VU auto-splitting, wave-based execution, and full observability stack. Deployed to production as first task.",
         "Own Kubernetes infrastructure, Docker deployments, CI/CD pipelines, and observability stacks across the platform.",
         "Automated image build and delivery pipelines via GitHub Actions to Azure Container Registry for air-gapped client deployments.",
         "Implemented Prometheus and Grafana observability with ServiceMonitor, custom dashboards, and SQLite-backed regression tracking.",
