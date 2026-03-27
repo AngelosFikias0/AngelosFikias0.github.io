@@ -2163,7 +2163,6 @@
           </div>
           <div class="rv" style="transition-delay: 0.12s">
             <div class="stats" id="about-stats"></div>
-            <div id="soft-skills-wrap" style="margin-top:1.4rem"></div>
           </div>
         </div>
       </div>
@@ -2411,7 +2410,7 @@
           i === 1 ? `<span class="g" data-text="${p}">${p}</span>` : p,
         )
         .join("");
-      document.getElementById("hero-sub").textContent = "I own cloud-native infrastructure end to end — Kubernetes, CI/CD, observability, and the automation that ties it together. Based in Thessaloniki, shipping to production.";
+      document.getElementById("hero-sub").textContent = hero.sub;
       const ctasEl = document.getElementById("hero-ctas");
       hero.ctas.forEach((cta) => {
         const a = document.createElement("a");
@@ -2440,22 +2439,7 @@
           ),
         ),
       );
-      // Render soft skills
-      if (D.softSkills && D.softSkills.length) {
-        const sw = document.getElementById("soft-skills-wrap");
-        const ssCard = el("div", "card");
-        ssCard.innerHTML = `<div class="card-h"><div class="led"></div>soft_skills.json</div>`;
-        const ssBody = el("div", "");
-        ssBody.style.cssText = "padding:0.9rem 1.1rem;display:flex;flex-wrap:wrap;gap:7px;";
-        D.softSkills.forEach((s) => {
-          const t = el("span", "tag");
-          t.style.cssText = "background:rgba(0,212,255,0.055);border-color:rgba(0,212,255,0.14);color:var(--cd);";
-          t.textContent = s;
-          ssBody.appendChild(t);
-        });
-        ssCard.appendChild(ssBody);
-        sw.appendChild(ssCard);
-      }
+
 
       /* ═══════════════════════════════════════
      STACK
@@ -2548,16 +2532,12 @@
           match: (c) => /devops|jenkins|argo|gitops|ci.?cd|infrastructure as code|sre|site reliability/i.test(c.name),
         },
         {
-          label: "Architecture",
-          match: (c) => /architect|genai|predictive ai/i.test(c.name),
+          label: "Architecture & Agile",
+          match: (c) => /architect|agile|scrum/i.test(c.name),
         },
         {
-          label: "Agile & PM",
-          match: (c) => /agile|scrum|itil|consulting|digital transformation|design thinking|explorer/i.test(c.name),
-        },
-        {
-          label: "Other",
-          match: (c) => /finance|fintech|risk|data|cybersecurity|java|blockchain|jprime/i.test(c.name),
+          label: "Security & Languages",
+          match: (c) => /cybersecurity|java|blockchain/i.test(c.name),
         },
       ];
       const cf = document.getElementById("certs-filter");

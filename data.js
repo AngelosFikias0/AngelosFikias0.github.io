@@ -62,7 +62,6 @@ window.SITE_DATA = {
     ],
   },
 
-  // Stack: main stack highlights + detailed categories
   mainStack: [
     "Kubernetes",
     "Docker",
@@ -112,7 +111,6 @@ window.SITE_DATA = {
         "ClickHouse",
         "Kafka",
         "MinIO",
-        "SRE",
       ],
     },
     {
@@ -122,7 +120,6 @@ window.SITE_DATA = {
       items: [
         "Artillery",
         "Playwright",
-        "Python",
         "Bash",
         "PowerShell",
       ],
@@ -137,7 +134,6 @@ window.SITE_DATA = {
         "TypeScript",
         "Java",
         "SQL",
-        "Bash",
         "React",
         "Spring Boot",
       ],
@@ -148,12 +144,13 @@ window.SITE_DATA = {
     {
       type: "platform tooling · production",
       name: "Cloud-Native Browser Load Testing Platform",
-      desc: "Built the first distributed E2E load testing platform to run real Playwright browser sessions at scale on Kubernetes — replacing synthetic HTTP simulation with actual end-user workflows under full parallel load, orchestrated via Artillery. Owned the project end-to-end: architecture, implementation, client delivery, and production rollout. Architected a two-layer system with exact VU auto-splitting, wave-based execution, CSV batch injection, and six configurable load profiles. The platform includes an intelligent test generator powered by a Python engine and a structured JSON knowledge base: it detects and auto-fixes 35+ known Angular E2E pitfalls (timing issues, dynamic selectors, async rendering edge cases), and for patterns that cannot be resolved automatically, it surfaces targeted guidance — rewriting the problem, explaining the root cause, and providing testers with actionable steps toward stable, reliable implementations. Includes a visual verification suite with video capture, a zero-dependency reporting engine, and a native desktop GUI. Metrics flow through Prometheus and Grafana with SQLite regression tracking. Built and published via GitHub Actions to Azure Container Registry. Deployed to production at the highest concurrent real-browser VU count ever run on the system.",
+      desc: "Built the first distributed E2E load testing platform to run real Playwright browser sessions at scale on Kubernetes — replacing synthetic HTTP simulation with actual end-user workflows under full parallel load, orchestrated via Artillery. Owned the project end-to-end: architecture, implementation, client delivery, and production rollout. Architected a two-layer system with exact VU auto-splitting, wave-based execution, CSV batch injection, and six configurable load profiles. The platform includes an intelligent test generator powered by a Python engine and a structured JSON knowledge base: it detects and auto-fixes 35+ known Angular E2E pitfalls (timing issues, dynamic selectors, async rendering edge cases), and for patterns that cannot be resolved automatically, it surfaces targeted guidance — rewriting the problem, explaining the root cause, and providing testers with actionable steps toward stable, reliable implementations. Extended with a Helm-based environment lifecycle operator for autonomous namespace management: cluster-aware auto-discovery across four lookup strategies, full provision/status/destroy/cleanup lifecycle, and GUI-confirmed destructive actions. Includes a visual verification suite with video capture, a zero-dependency reporting engine, and a native desktop GUI. Metrics flow through Prometheus and Grafana with SQLite regression tracking. Built and published via GitHub Actions to Azure Container Registry. Deployed to production at the highest concurrent real-browser VU count ever run on the system.",
       stack: [
         "Python",
         "Artillery",
         "Playwright",
         "Kubernetes",
+        "Helm",
         "Docker",
         "Azure Container Registry",
         "Prometheus",
@@ -162,12 +159,11 @@ window.SITE_DATA = {
         "SQLite",
         "GitHub Actions",
         "JavaScript",
-        "JSON",
       ],
       github: "https://github.com/AngelosFikias0",
     },
     {
-      type: "enterprise · full-stack",
+      type: "enterprise · full-stack · university",
       name: "EfficienCity - Municipal Resource Management",
       desc: "Enterprise-grade municipal platform designed end-to-end from stakeholder analysis through cloud architecture, enabling inter-municipality asset sharing, real-time inventory tracking, and citizen-facing transparency. Led full systems analysis across the complete SDLC: stakeholder mapping, BPMN AS-IS/TO-BE modeling, Root Cause Analysis, SWOT, and MoSCoW prioritization. Designed a microservices system on Azure AKS with Kafka event-driven communication, multi-layer data pipeline across PostgreSQL and ClickHouse, and immutable audit ledger ensuring 100% transaction traceability and GDPR compliance. Delivered a React + TypeScript MVP across three role-based interfaces (Citizen, Municipal Employee, Administrator), designed in Figma with full UX journey documentation.",
       stack: [
@@ -185,9 +181,9 @@ window.SITE_DATA = {
       github: "https://github.com/AngelosFikias0/Resource_Management_System",
     },
     {
-      type: "enterprise architecture",
+      type: "enterprise architecture · university",
       name: "SafeCar - Enterprise Insurance Platform",
-      desc: "Enterprise insurance platform managing the full policy lifecycle from proposals through claims. Modeled the digital transformation of insurance processes end-to-end. Applied TOGAF and Zachman frameworks to align software architecture with business strategy. Defined role-based access and automated workflows. Led team collaboration delivering an enterprise-grade solution following SDLC best practices end-to-end.",
+      desc: "Enterprise insurance platform managing the full policy lifecycle from proposals through claims. Applied TOGAF and Zachman frameworks to align software architecture with business strategy. Modeled the digital transformation of insurance processes end-to-end via BPMN and UML. Defined role-based access and automated workflows across a team-delivered SDLC project.",
       stack: [
         "Java",
         "TOGAF",
@@ -200,7 +196,7 @@ window.SITE_DATA = {
       github: "https://github.com/AngelosFikias0/Safe_car_insurance_System",
     },
     {
-      type: "mobile + backend",
+      type: "mobile + backend · university",
       name: "TikiPark - Real-Time Smart Parking",
       desc: "Smart Android parking assistant solving urban parking challenges with real-time slot availability, offline-first architecture, and seamless Google Maps integration. Architected offline-first system maintaining full functionality during network interruptions. Implemented RBAC with Admin/User/Guest tiers across a modular authentication system. Designed modular backend with RESTful APIs ready for payment gateway integration.",
       stack: [
@@ -222,7 +218,7 @@ window.SITE_DATA = {
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Built the first distributed E2E browser load testing platform on Kubernetes — real Playwright sessions at scale, exact VU auto-splitting, wave-based execution, and full observability stack. Deployed to production as first task.",
+        "Built the first distributed E2E browser load testing platform on Kubernetes — real Playwright sessions at scale, exact VU auto-splitting, wave-based execution, Helm-based environment lifecycle operator, and full observability stack. Deployed to production as first task.",
         "Own Kubernetes infrastructure, Docker deployments, CI/CD pipelines, and observability stacks across the platform.",
         "Automated image build and delivery pipelines via GitHub Actions to Azure Container Registry for air-gapped client deployments.",
         "Implemented Prometheus and Grafana observability with ServiceMonitor, custom dashboards, and SQLite-backed regression tracking.",
@@ -230,6 +226,7 @@ window.SITE_DATA = {
       ],
       tags: [
         "Kubernetes",
+        "Helm",
         "Docker",
         "GitHub Actions",
         "Prometheus",
@@ -276,7 +273,6 @@ window.SITE_DATA = {
     },
   ],
 
-  // Full cert list from LinkedIn, grouped and ordered by relevance: cloud/k8s first, then devops, then architecture/agile, then other
   certifications: [
     // ── Cloud & Kubernetes ──
     {
@@ -296,30 +292,6 @@ window.SITE_DATA = {
       name: "Introduction to Kubernetes",
       issuer: "The Linux Foundation",
       date: "Nov 2025",
-    },
-    {
-      icon: "🟠",
-      name: "Serverless Fundamentals",
-      issuer: "AWS",
-      date: "Oct 2025",
-    },
-    {
-      icon: "☁️",
-      name: "Cloud Architecture: Core Concepts",
-      issuer: "LinkedIn",
-      date: "Sep 2025",
-    },
-    {
-      icon: "☁️",
-      name: "Google Cloud Data and Storage Foundations",
-      issuer: "Google / LinkedIn",
-      date: "Sep 2025",
-    },
-    {
-      icon: "☁️",
-      name: "A Beginner's Guide to Public Cloud Options",
-      issuer: "LinkedIn",
-      date: "Sep 2025",
     },
     // ── DevOps & CI/CD ──
     {
@@ -342,29 +314,11 @@ window.SITE_DATA = {
     },
     {
       icon: "🔄",
-      name: "DevOps Foundations: CI/CD",
-      issuer: "CompTIA",
-      date: "Sep 2025",
-    },
-    {
-      icon: "🔄",
-      name: "DevOps Foundations: Infrastructure as Code",
-      issuer: "LinkedIn",
-      date: "Sep 2025",
-    },
-    {
-      icon: "🔄",
       name: "DevOps Foundations: Site Reliability Engineering",
       issuer: "LinkedIn",
       date: "Sep 2025",
     },
-    {
-      icon: "🔄",
-      name: "DevOps Foundations",
-      issuer: "LinkedIn",
-      date: "Aug 2025",
-    },
-    // ── Architecture ──
+    // ── Architecture & Agile ──
     {
       icon: "🏗️",
       name: "Software Architecture Foundations",
@@ -378,61 +332,12 @@ window.SITE_DATA = {
       date: "Aug 2025",
     },
     {
-      icon: "🤖",
-      name: "GenAI and Predictive AI Architecture Foundations",
-      issuer: "LinkedIn",
-      date: "Sep 2025",
-    },
-    // ── Agile & PM ──
-    {
       icon: "📋",
       name: "Agile Project Management Professional",
       issuer: "Atlassian",
       date: "Sep 2025",
     },
-    {
-      icon: "📋",
-      name: "Scrum: The Basics",
-      issuer: "Project Management Institute",
-      date: "Sep 2025",
-    },
-    {
-      icon: "📋",
-      name: "Agile Foundations",
-      issuer: "IIBA",
-      date: "Sep 2025",
-    },
-    {
-      icon: "📋",
-      name: "Agile Explorer",
-      issuer: "IBM",
-      date: "Aug 2025",
-    },
-    {
-      icon: "📋",
-      name: "Learning ITIL",
-      issuer: "CompTIA",
-      date: "Sep 2025",
-    },
-    {
-      icon: "📋",
-      name: "Consulting Foundations",
-      issuer: "Project Management Institute",
-      date: "Sep 2025",
-    },
-    {
-      icon: "📋",
-      name: "Effectively Leading Digital Transformation",
-      issuer: "IIBA",
-      date: "Sep 2025",
-    },
-    {
-      icon: "📋",
-      name: "Enterprise Design Thinking Practitioner",
-      issuer: "IBM",
-      date: "Aug 2025",
-    },
-    // ── Security & Other ──
+    // ── Security & Languages ──
     {
       icon: "🔐",
       name: "Introduction to Cybersecurity",
@@ -444,42 +349,6 @@ window.SITE_DATA = {
       name: "Oracle Java Foundations",
       issuer: "Oracle",
       date: "Aug 2025",
-    },
-    {
-      icon: "📊",
-      name: "Data Fundamentals",
-      issuer: "IBM",
-      date: "Aug 2025",
-    },
-    {
-      icon: "💰",
-      name: "Introduction to Risk Management",
-      issuer: "Project Management Institute",
-      date: "Sep 2025",
-    },
-    {
-      icon: "💰",
-      name: "Corporate Finance Foundations",
-      issuer: "NASBA",
-      date: "Sep 2025",
-    },
-    {
-      icon: "💰",
-      name: "Fintech Masterclass",
-      issuer: "CFTE",
-      date: "Sep 2025",
-    },
-    {
-      icon: "🔗",
-      name: "Introduction to Blockchain and Smart Contracts",
-      issuer: "IEEE",
-      date: "May 2025",
-    },
-    {
-      icon: "☕",
-      name: "jPrime Java Conference",
-      issuer: "jPrime",
-      date: "Apr 2025",
     },
   ],
 
@@ -514,15 +383,4 @@ window.SITE_DATA = {
       },
     ],
   },
-
-  softSkills: [
-    "Agile Collaboration",
-    "Critical Thinking",
-    "Continuous Learning",
-    "Project Ownership",
-    "Cross-Functional Communication",
-    "Technical Communication",
-    "Time Management",
-    "Stakeholder Management",
-  ],
 };
