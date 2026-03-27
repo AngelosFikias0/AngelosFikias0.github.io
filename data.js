@@ -320,6 +320,12 @@ window.SITE_DATA = {
     },
     // ── Architecture & Agile ──
     {
+      icon: "📋",
+      name: "Agile Project Management Professional",
+      issuer: "Atlassian",
+      date: "Sep 2025",
+    },
+    {
       icon: "🏗️",
       name: "Software Architecture Foundations",
       issuer: "LinkedIn",
@@ -330,12 +336,6 @@ window.SITE_DATA = {
       name: "Enterprise Architecture Foundations",
       issuer: "LinkedIn",
       date: "Aug 2025",
-    },
-    {
-      icon: "📋",
-      name: "Agile Project Management Professional",
-      issuer: "Atlassian",
-      date: "Sep 2025",
     },
     // ── Security & Languages ──
     {

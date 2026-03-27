@@ -6,6 +6,8 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no d
 
 **Live:** [angelosfikias.dev](https://angelosfikias.dev)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/839b9a6d-e3f8-4000-9ec9-2b9d9e1143d1/deploy-status)](https://app.netlify.com/projects/tubular-cobbler-ec0cab/deploys)
+
 ---
 
 ## Stack
