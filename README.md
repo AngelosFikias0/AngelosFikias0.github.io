@@ -40,10 +40,10 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no d
 │  │              │     │                                      │  │
 │  │  SITE_DATA   │     │  ┌─────────────────────────────────┐ │  │
 │  │  ──────────  │     │  │           <style>               │ │  │
-│  │  meta        │     │  │  Design tokens (CSS vars)        │ │  │
-│  │  terminal    │     │  │  JetBrains Mono + Syne fonts     │ │  │
-│  │  hero        │     │  │  Dark palette · Grain overlay    │ │  │
-│  │  about       │     │  │  Scanlines · Responsive layout   │ │  │
+│  │  meta        │     │  │  Design tokens (CSS vars)       │ │  │
+│  │  terminal    │     │  │  JetBrains Mono + Syne fonts    │ │  │
+│  │  hero        │     │  │  Dark palette · Grain overlay   │ │  │
+│  │  about       │     │  │  Scanlines · Responsive layou   │ │  │
 │  │  stack       │     │  └─────────────────────────────────┘ │  │
 │  │  projects    │     │                                      │  │
 │  │  experience  │     │  ┌─────────────────────────────────┐ │  │
@@ -75,7 +75,7 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no d
 │                       │  └─────────────────────────────────┘ │  │
 │                       │                                      │  │
 │                       │  ┌─────────────────────────────────┐ │  │
-│                       │  │       Interactive Terminal       │ │  │
+│                       │  │       Interactive Terminal      │ │  │
 │                       │  │       (Ctrl+` / button)         │ │  │
 │                       │  │                                 │ │  │
 │                       │  │  Command registry               │ │  │
@@ -106,11 +106,11 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no d
 │  │                    Global Systems                        │   │
 │  │                                                          │   │
 │  │  Custom cursor — 2-ring, hover states, touch detection   │   │
-│  │  Scroll progress bar — gradient, fixed top              │   │
+│  │  Scroll progress bar — gradient, fixed top               │   │
 │  │  IntersectionObserver ×4                                 │   │
-│  │    scroll reveal · skill bars · count-up · typewriter   │   │
-│  │  Particle canvas — 60 particles, O(n²) connections,     │   │
-│  │    mouse attraction, pauses when hero off-screen        │   │
+│  │    scroll reveal · skill bars · count-up · typewriter    │   │
+│  │  Particle canvas — 60 particles, O(n²) connections,      │   │
+│  │    mouse attraction, pauses when hero off-screen         │   │
 │  │  Magnetic buttons                                        │   │
 │  │  3D card tilt (project cards)                            │   │
 │  │  Mobile hamburger nav + drawer                           │   │
@@ -120,9 +120,9 @@ Built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no d
 ┌─────────────────────────────────────────────────────────────────┐
 │                        SEO / Meta Layer                         │
 │                                                                 │
-│  JSON-LD (schema.org/Person)  ·  OpenGraph  ·  Twitter card    │
-│  Canonical URL  ·  sitemap.xml  ·  robots.txt                  │
-│  Google Analytics (gtag.js)   ·  Google Search Console         │
+│  JSON-LD (schema.org/Person)  ·  OpenGraph  ·  Twitter card     │
+│  Canonical URL  ·  sitemap.xml  ·  robots.txt                   │
+│  Google Analytics (gtag.js)   ·  Google Search Console          │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -286,4 +286,4 @@ Then open `http://localhost:8000`.
 
 ## License
 
-Code is MIT. Content (text, projects, personal details) is mine — please don't copy it.
+Code is MIT. Content (text, projects, personal details) is mine - don't copy it.
