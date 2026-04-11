@@ -2450,7 +2450,7 @@
         wrap.style.transitionDelay = `${i * 0.08}s`;
         const inner = `
           <div class="scat-h">
-            <span class="scat-ico">${cat.icon}</span>
+            <span class="scat-ico">${cat.icon || ''}</span>
             <span class="scat-name">${cat.name}</span>
           </div>
           <div class="tags">${cat.items.map((t) => `<span class="tag">${t}</span>`).join("")}</div>`;
@@ -2569,7 +2569,7 @@
         div.style.transitionDelay = `${i * 0.03}s`;
         div.dataset.name = c.name;
         div.dataset.issuer = c.issuer;
-        div.innerHTML = `<span class="cert-ico">${c.icon}</span><div><div class="cert-name">${c.name}</div><div class="cert-issuer">${c.issuer}${c.date ? " · " + c.date : ""}</div></div>`;
+        div.innerHTML = `<span class="cert-ico">${c.icon || ''}</span><div><div class="cert-name">${c.name}</div><div class="cert-issuer">${c.issuer}${c.date ? " · " + c.date : ""}</div></div>`;
         cg.appendChild(div);
       });
 
@@ -3042,7 +3042,7 @@
                   return;
                 found = true;
                 line(
-                  `<span class="hl-c">${cat.icon} <b>${cat.name}</b></span>`,
+                  `<span class="hl-c">${cat.icon || ''}${cat.icon ? ' ' : ''}<b>${cat.name}</b></span>`,
                 );
                 const items =
                   cat.type === "bars"
@@ -3158,7 +3158,7 @@
               blank();
               filtered.forEach((c) => {
                 line(
-                  `${c.icon} <span class="hl-g">${c.name}</span> <span style="color:var(--m2)">· ${c.issuer}${c.date ? " (" + c.date + ")" : ""}</span>`,
+                  `${c.icon ? c.icon + ' ' : ''}<span class="hl-g">${c.name}</span> <span style="color:var(--m2)">· ${c.issuer}${c.date ? " (" + c.date + ")" : ""}</span>`,
                 );
               });
               if (!filtered.length) line(`no certs matching filter`, "err");

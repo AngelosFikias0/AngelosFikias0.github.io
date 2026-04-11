@@ -72,7 +72,6 @@ window.SITE_DATA = {
 
   stack: [
     {
-      icon: ">",
       name: "Cloud & Infrastructure",
       type: "tags",
       items: [
@@ -88,7 +87,6 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: ">",
       name: "CI/CD & GitOps",
       type: "tags",
       items: [
@@ -100,7 +98,6 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: ">",
       name: "Observability & Data",
       type: "tags",
       items: [
@@ -114,7 +111,6 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: ">",
       name: "Testing & Automation",
       type: "tags",
       items: [
@@ -125,7 +121,6 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: ">",
       name: "Languages & Frameworks",
       type: "tags",
       items: [
@@ -218,7 +213,7 @@ window.SITE_DATA = {
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Built a distributed E2E browser load testing platform on Kubernetes: real Playwright sessions at scale, exact VU auto-splitting, wave-based execution, Helm-based environment lifecycle operator, and full observability stack. Deployed to production.",
+        "Built a distributed E2E browser load testing platform on Kubernetes, running real Playwright sessions at scale via Artillery with exact VU auto-splitting, wave-based batch execution, and six configurable load profiles. Angular-aware test generator backed by a structured diagnostic knowledge base auto-fixes 35+ known E2E pitfalls and surfaces targeted remediation for patterns it cannot resolve. Helm-based environment lifecycle operator covers cluster-aware auto-discovery, full namespace provisioning and teardown, and GUI-guarded destructive operations, complemented by Prometheus and Grafana observability with SQLite regression tracking. Shipped via GitHub Actions to Azure Container Registry and deployed to production.",
         "Own Kubernetes infrastructure, Docker deployments, CI/CD pipelines, and observability stacks across the platform.",
         "Automated image build and delivery pipelines via GitHub Actions to Azure Container Registry for air-gapped client deployments.",
         "Implemented Prometheus and Grafana observability with ServiceMonitor, custom dashboards, and SQLite-backed regression tracking.",
@@ -276,76 +271,64 @@ window.SITE_DATA = {
   certifications: [
     // ── Cloud & Kubernetes ──
     {
-      icon: ">",
       name: "Azure Fundamentals (AZ-900)",
       issuer: "Microsoft",
       date: "Jan 2026",
     },
     {
-      icon: ">",
       name: "Manage Kubernetes in Google Cloud",
       issuer: "Google",
       date: "Dec 2025",
     },
     {
-      icon: ">",
       name: "Introduction to Kubernetes",
       issuer: "The Linux Foundation",
       date: "Nov 2025",
     },
     // ── DevOps & CI/CD ──
     {
-      icon: ">",
       name: "DevOps Professional",
       issuer: "PagerDuty",
       date: "Sep 2025",
     },
     {
-      icon: ">",
       name: "Intro to CD & GitOps using Argo CD",
       issuer: "Akuity",
       date: "Nov 2025",
     },
     {
-      icon: ">",
       name: "Introduction to Jenkins",
       issuer: "The Linux Foundation",
       date: "Nov 2025",
     },
     {
-      icon: ">",
       name: "DevOps Foundations: Site Reliability Engineering",
       issuer: "LinkedIn",
       date: "Sep 2025",
     },
     // ── Architecture & Agile ──
     {
-      icon: ">",
       name: "Agile Project Management Professional",
       issuer: "Atlassian",
       date: "Sep 2025",
     },
     {
-      icon: ">",
       name: "Software Architecture Foundations",
       issuer: "LinkedIn",
       date: "Aug 2025",
     },
     {
-      icon: ">",
       name: "Enterprise Architecture Foundations",
       issuer: "LinkedIn",
       date: "Aug 2025",
     },
     // ── Security & Languages ──
     {
-      icon: ">",
       name: "Introduction to Cybersecurity",
       issuer: "Cisco",
       date: "Aug 2025",
     },
     {
-      icon: ">",
       name: "Oracle Java Foundations",
       issuer: "Oracle",
       date: "Aug 2025",
@@ -362,7 +345,6 @@ window.SITE_DATA = {
     ],
     links: [
       {
-        icon: ">",
         platform: "Email",
         handle: "angelosfikias@gmail.com",
         href: "mailto:angelosfikias@gmail.com",
