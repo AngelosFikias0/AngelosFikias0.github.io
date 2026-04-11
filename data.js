@@ -345,6 +345,7 @@ window.SITE_DATA = {
     ],
     links: [
       {
+        icon: "email",
         platform: "Email",
         handle: "angelosfikias@gmail.com",
         href: "mailto:angelosfikias@gmail.com",
