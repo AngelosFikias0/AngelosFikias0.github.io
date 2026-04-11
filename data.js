@@ -7,7 +7,7 @@ window.SITE_DATA = {
     email: "angelosfikias@gmail.com",
     github: "https://github.com/AngelosFikias0",
     linkedin: "https://www.linkedin.com/in/angelos-fikias/",
-    status: "Shipping production infrastructure",
+    status: "Building production infrastructure",
     focus: "Platform Engineering · DevOps · Cloud Infrastructure",
   },
 
@@ -34,8 +34,8 @@ window.SITE_DATA = {
   ],
 
   hero: {
-    headline: ["Building ", "platforms", " that\nship with confidence."],
-    sub: "I own cloud-native infrastructure end to end — Kubernetes, CI/CD, observability, and the automation that ties it together. Based in Thessaloniki, shipping to production.",
+    headline: ["Building ", "platforms", " that\noperate reliably."],
+    sub: "I own cloud-native infrastructure end to end: Kubernetes, CI/CD, observability, and the automation that ties it together. Based in Thessaloniki, Greece.",
     ctas: [
       { label: "$ explore --projects", href: "#projects", style: "primary" },
       {
@@ -50,9 +50,9 @@ window.SITE_DATA = {
 
   about: {
     bio: [
-      "I'm a platform engineer focused on building and operating the infrastructure that lets product teams ship reliably and fast. My work spans Kubernetes cluster ownership, CI/CD pipeline design, observability stacks, and automation tooling — from the first commit to production rollout.",
+      "I'm a platform engineer focused on building and operating the infrastructure that lets product teams ship reliably and fast. My work spans Kubernetes cluster ownership, CI/CD pipeline design, observability stacks, and automation tooling, from initial commit to production rollout.",
       "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cloud-native AI-driven retail platform.",
-      "My philosophy: <b>automate everything, measure what matters, ship with confidence.</b> Great infrastructure is invisible — it's just the floor the whole team stands on.",
+      "My philosophy: <b>automate everything, measure what matters, own the outcome.</b>",
     ],
     stats: [
       { value: "1+", label: "Years Professional" },
@@ -72,7 +72,7 @@ window.SITE_DATA = {
 
   stack: [
     {
-      icon: "☁️",
+      icon: ">",
       name: "Cloud & Infrastructure",
       type: "tags",
       items: [
@@ -88,7 +88,7 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: "⚙️",
+      icon: ">",
       name: "CI/CD & GitOps",
       type: "tags",
       items: [
@@ -100,7 +100,7 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: "📊",
+      icon: ">",
       name: "Observability & Data",
       type: "tags",
       items: [
@@ -114,7 +114,7 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: "🧪",
+      icon: ">",
       name: "Testing & Automation",
       type: "tags",
       items: [
@@ -125,7 +125,7 @@ window.SITE_DATA = {
       ],
     },
     {
-      icon: "💻",
+      icon: ">",
       name: "Languages & Frameworks",
       type: "tags",
       items: [
@@ -144,7 +144,7 @@ window.SITE_DATA = {
     {
       type: "platform tooling · production",
       name: "Cloud-Native Browser Load Testing Platform",
-      desc: "Built a distributed E2E load testing platform to run real Playwright browser sessions at scale on Kubernetes — replacing synthetic HTTP simulation with actual end-user workflows under full parallel load, orchestrated via Artillery. Owned the project end-to-end: architecture, implementation, client delivery, and production rollout. Architected a two-layer system with exact VU auto-splitting, wave-based execution, CSV batch injection, and six configurable load profiles. The platform includes an intelligent test generator powered by a Python engine and a structured JSON knowledge base: it detects and auto-fixes 35+ known Angular E2E pitfalls (timing issues, dynamic selectors, async rendering edge cases), and for patterns that cannot be resolved automatically, it surfaces targeted guidance — rewriting the problem, explaining the root cause, and providing testers with actionable steps toward stable, reliable implementations. Extended with a Helm-based environment lifecycle operator for autonomous namespace management: cluster-aware auto-discovery across four lookup strategies, full provision/status/destroy/cleanup lifecycle, and GUI-confirmed destructive actions. Includes a visual verification suite with video capture, a zero-dependency reporting engine, and a native desktop GUI. Metrics flow through Prometheus and Grafana with SQLite regression tracking. Built and published via GitHub Actions to Azure Container Registry. Deployed to production at the highest concurrent real-browser VU count ever run on the system.",
+      desc: "Distributed E2E load testing platform running real Playwright browser sessions at scale on Kubernetes via Artillery. Replaced synthetic HTTP simulation with actual user workflows. Two-layer architecture with exact VU auto-splitting, wave-based execution, CSV batch injection, and six load profiles. Python-based test generator with a JSON knowledge base that auto-fixes 35+ Angular E2E pitfalls and surfaces targeted remediation for the rest. Helm operator for full namespace lifecycle management across four cluster discovery strategies. Observability via Prometheus and Grafana with SQLite regression tracking. Shipped via GitHub Actions to Azure Container Registry. Deployed to production.",
       stack: [
         "Python",
         "Artillery",
@@ -165,7 +165,7 @@ window.SITE_DATA = {
     {
       type: "enterprise · full-stack · university",
       name: "EfficienCity - Municipal Resource Management",
-      desc: "Enterprise-grade municipal platform designed end-to-end from stakeholder analysis through cloud architecture, enabling inter-municipality asset sharing, real-time inventory tracking, and citizen-facing transparency. Led full systems analysis across the complete SDLC: stakeholder mapping, BPMN AS-IS/TO-BE modeling, Root Cause Analysis, SWOT, and MoSCoW prioritization. Designed a microservices system on Azure AKS with Kafka event-driven communication, multi-layer data pipeline across PostgreSQL and ClickHouse, and immutable audit ledger ensuring 100% transaction traceability and GDPR compliance. Delivered a React + TypeScript MVP across three role-based interfaces (Citizen, Municipal Employee, Administrator), designed in Figma with full UX journey documentation.",
+      desc: "Municipal resource management platform enabling inter-municipality asset sharing, real-time inventory tracking, and citizen-facing transparency. Full SDLC ownership: stakeholder mapping, BPMN AS-IS/TO-BE modeling, SWOT, MoSCoW. Microservices on Azure AKS with Kafka event-driven communication, PostgreSQL and ClickHouse data pipeline, and an immutable audit ledger for GDPR compliance. React + TypeScript MVP across three role-based interfaces, designed in Figma.",
       stack: [
         "React",
         "TypeScript",
@@ -183,7 +183,7 @@ window.SITE_DATA = {
     {
       type: "enterprise architecture · university",
       name: "SafeCar - Enterprise Insurance Platform",
-      desc: "Enterprise insurance platform managing the full policy lifecycle from proposals through claims. Applied TOGAF and Zachman frameworks to align software architecture with business strategy. Modeled the digital transformation of insurance processes end-to-end via BPMN and UML. Defined role-based access and automated workflows across a team-delivered SDLC project.",
+      desc: "Enterprise insurance platform covering the full policy lifecycle from proposals through claims. Applied TOGAF and Zachman frameworks to align architecture with business strategy. Modeled end-to-end process transformation via BPMN and UML. RBAC and automated workflows delivered across a team SDLC project.",
       stack: [
         "Java",
         "TOGAF",
@@ -198,7 +198,7 @@ window.SITE_DATA = {
     {
       type: "mobile + backend · university",
       name: "TikiPark - Real-Time Smart Parking",
-      desc: "Smart Android parking assistant solving urban parking challenges with real-time slot availability, offline-first architecture, and seamless Google Maps integration. Architected offline-first system maintaining full functionality during network interruptions. Implemented RBAC with Admin/User/Guest tiers across a modular authentication system. Designed modular backend with RESTful APIs ready for payment gateway integration.",
+      desc: "Android parking assistant with real-time slot availability and Google Maps integration. Offline-first architecture maintains full functionality without network access. RBAC across Admin/User/Guest tiers with a modular auth system. RESTful backend with PHP and MySQL, SQLite for local persistence.",
       stack: [
         "Java",
         "Android SDK",
@@ -218,7 +218,7 @@ window.SITE_DATA = {
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Built a distributed E2E browser load testing platform on Kubernetes — real Playwright sessions at scale, exact VU auto-splitting, wave-based execution, Helm-based environment lifecycle operator, and full observability stack. Deployed to production.",
+        "Built a distributed E2E browser load testing platform on Kubernetes: real Playwright sessions at scale, exact VU auto-splitting, wave-based execution, Helm-based environment lifecycle operator, and full observability stack. Deployed to production.",
         "Own Kubernetes infrastructure, Docker deployments, CI/CD pipelines, and observability stacks across the platform.",
         "Automated image build and delivery pipelines via GitHub Actions to Azure Container Registry for air-gapped client deployments.",
         "Implemented Prometheus and Grafana observability with ServiceMonitor, custom dashboards, and SQLite-backed regression tracking.",
@@ -244,7 +244,7 @@ window.SITE_DATA = {
       bullets: [
         "Developed and managed cloud-native infrastructure for an AI-driven retail forecasting platform.",
         "Operated and scaled Kubernetes clusters using Docker, Helm, and Linux.",
-        "Began building distributed E2E performance testing infrastructure — continued and shipped as full-time first task.",
+        "Began building distributed E2E performance testing infrastructure, continued and shipped as full-time first task.",
         "Built and automated internal tooling and scripts in Python and Bash.",
         "Collaborated in Agile workflows across infrastructure, backend, and platform teams.",
       ],
@@ -276,76 +276,76 @@ window.SITE_DATA = {
   certifications: [
     // ── Cloud & Kubernetes ──
     {
-      icon: "🔷",
+      icon: ">",
       name: "Azure Fundamentals (AZ-900)",
       issuer: "Microsoft",
       date: "Jan 2026",
     },
     {
-      icon: "☸️",
+      icon: ">",
       name: "Manage Kubernetes in Google Cloud",
       issuer: "Google",
       date: "Dec 2025",
     },
     {
-      icon: "☸️",
+      icon: ">",
       name: "Introduction to Kubernetes",
       issuer: "The Linux Foundation",
       date: "Nov 2025",
     },
     // ── DevOps & CI/CD ──
     {
-      icon: "🔔",
+      icon: ">",
       name: "DevOps Professional",
       issuer: "PagerDuty",
       date: "Sep 2025",
     },
     {
-      icon: "🔄",
+      icon: ">",
       name: "Intro to CD & GitOps using Argo CD",
       issuer: "Akuity",
       date: "Nov 2025",
     },
     {
-      icon: "🔧",
+      icon: ">",
       name: "Introduction to Jenkins",
       issuer: "The Linux Foundation",
       date: "Nov 2025",
     },
     {
-      icon: "🔄",
+      icon: ">",
       name: "DevOps Foundations: Site Reliability Engineering",
       issuer: "LinkedIn",
       date: "Sep 2025",
     },
     // ── Architecture & Agile ──
     {
-      icon: "📋",
+      icon: ">",
       name: "Agile Project Management Professional",
       issuer: "Atlassian",
       date: "Sep 2025",
     },
     {
-      icon: "🏗️",
+      icon: ">",
       name: "Software Architecture Foundations",
       issuer: "LinkedIn",
       date: "Aug 2025",
     },
     {
-      icon: "🏗️",
+      icon: ">",
       name: "Enterprise Architecture Foundations",
       issuer: "LinkedIn",
       date: "Aug 2025",
     },
     // ── Security & Languages ──
     {
-      icon: "🔐",
+      icon: ">",
       name: "Introduction to Cybersecurity",
       issuer: "Cisco",
       date: "Aug 2025",
     },
     {
-      icon: "☕",
+      icon: ">",
       name: "Oracle Java Foundations",
       issuer: "Oracle",
       date: "Aug 2025",
@@ -354,7 +354,7 @@ window.SITE_DATA = {
 
   contact: {
     intro:
-      "Want to talk <b>Kubernetes internals, GitOps patterns, or cloud-native architecture</b>? Always happy to connect with engineers and teams building interesting things. Drop me a line.",
+      "Open to conversations about <b>Kubernetes, GitOps, and cloud-native infrastructure</b>. Reach out directly.",
     languages: [
       { lang: "Greek", level: "Native" },
       { lang: "English", level: "C2 Proficiency" },
@@ -362,7 +362,7 @@ window.SITE_DATA = {
     ],
     links: [
       {
-        icon: "✉️",
+        icon: ">",
         platform: "Email",
         handle: "angelosfikias@gmail.com",
         href: "mailto:angelosfikias@gmail.com",
