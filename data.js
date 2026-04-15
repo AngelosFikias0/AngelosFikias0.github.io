@@ -139,7 +139,7 @@ window.SITE_DATA = {
     {
       type: "platform tooling · production",
       name: "Cloud-Native Browser Load Testing Platform",
-      desc: "Distributed E2E load testing platform running real Playwright browser sessions at scale on Kubernetes via Artillery. Replaced synthetic HTTP simulation with actual user workflows. Two-layer architecture with exact VU auto-splitting, wave-based execution, CSV batch injection, and six load profiles. Python-based test generator with a JSON knowledge base that auto-fixes 35+ Angular E2E pitfalls and surfaces targeted remediation for the rest. Helm operator for full namespace lifecycle management across four cluster discovery strategies. Observability via Prometheus and Grafana with SQLite regression tracking. Shipped via GitHub Actions to Azure Container Registry. Deployed to production.",
+      desc: "Playwright workers run as isolated Kubernetes Jobs per wave, orchestrated by Artillery with CSV-driven test data injection, per-session video capture, and a zero-dependency HTML reporting engine for result aggregation. An Angular-aware test generator leverages a structured diagnostic knowledge base to auto-fix 35+ known E2E pitfalls and surface targeted remediation for unresolved patterns. The platform uses Helm-based deployments with environment-specific values, enabling reproducible releases and safe, atomic upgrades and rollbacks across clusters. It includes full observability via Prometheus and Grafana, with SQLite-based regression tracking, and is shipped through GitHub Actions to Azure Container Registry, deployed in production." 
       stack: [
         "Python",
         "Artillery",
@@ -213,7 +213,7 @@ window.SITE_DATA = {
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Built a distributed E2E browser load testing platform on Kubernetes, running real Playwright sessions at scale via Artillery with exact VU auto-splitting, wave-based batch execution, and six configurable load profiles. Angular-aware test generator backed by a structured diagnostic knowledge base auto-fixes 35+ known E2E pitfalls and surfaces targeted remediation for patterns it cannot resolve. Helm-based environment lifecycle operator covers cluster-aware auto-discovery, full namespace provisioning and teardown, and GUI-guarded destructive operations, complemented by Prometheus and Grafana observability with SQLite regression tracking. Shipped via GitHub Actions to Azure Container Registry and deployed to production.",
+        "Built a distributed E2E browser load testing platform on Kubernetes - real Playwright sessions at scale, exact VU auto-splitting, wave-based execution, E2E test generation with a diagnostic KB, and full observability stack. Extended with Helm for templated, environment-aware deployments, deterministic releases, and safe upgrade/rollback orchestration across clusters. Deployed to production.",
         "Own Kubernetes infrastructure, Docker deployments, CI/CD pipelines, and observability stacks across the platform.",
         "Automated image build and delivery pipelines via GitHub Actions to Azure Container Registry for air-gapped client deployments.",
         "Implemented Prometheus and Grafana observability with ServiceMonitor, custom dashboards, and SQLite-backed regression tracking.",
