@@ -139,7 +139,7 @@ window.SITE_DATA = {
     {
       type: "platform tooling · production",
       name: "Cloud-Native Browser Load Testing Platform",
-      desc: "Playwright workers run as isolated Kubernetes Jobs per wave, orchestrated by Artillery with CSV-driven test data injection, per-session video capture, and a zero-dependency HTML reporting engine for result aggregation. An Angular-aware test generator leverages a structured diagnostic knowledge base to auto-fix 35+ known E2E pitfalls and surface targeted remediation for unresolved patterns. The platform uses Helm-based deployments with environment-specific values, enabling reproducible releases and safe, atomic upgrades and rollbacks across clusters. It includes full observability via Prometheus and Grafana, with SQLite-based regression tracking, and is shipped through GitHub Actions to Azure Container Registry, deployed in production." 
+      desc: "Playwright workers run as isolated Kubernetes Jobs per wave, orchestrated by Artillery with CSV-driven test data injection, per-session video capture, and a zero-dependency HTML reporting engine for result aggregation. An Angular-aware test generator leverages a structured diagnostic knowledge base to auto-fix 35+ known E2E pitfalls and surface targeted remediation for unresolved patterns. The platform uses Helm-based deployments with environment-specific values, enabling reproducible releases and safe, atomic upgrades and rollbacks across clusters. It includes full observability via Prometheus and Grafana, with SQLite-based regression tracking, and is shipped through GitHub Actions to Azure Container Registry, deployed in production.", 
       stack: [
         "Python",
         "Artillery",
