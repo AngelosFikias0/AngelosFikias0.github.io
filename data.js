@@ -212,7 +212,7 @@ window.SITE_DATA = {
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Designed and shipped a Kubernetes-native E2E load testing platform — real Playwright browser execution, Artillery backend load, ephemeral job model, VU auto-splitting, wave-based orchestration, Pushgateway observability, and MinIO artifact storage. Validated on enterprise client pre-production environment.",
+        "Designed and shipped a Kubernetes-native E2E load testing platform (Playwright + Artillery) that enabled data-driven architectural validation before enterprise client go-live. Implemented ephemeral job-based execution, VU auto-splitting, wave-based orchestration, and granular observability - surfacing performance insights that informed platform-wide architectural decisions.",
         "Managed multi-cluster infrastructure via Rancher (K3s) and ArgoCD App of Apps GitOps delivery across internal, external, and client environments.",
         "Automated image build and delivery pipelines via Gitea Actions to Harbor and Azure Container Registry for air-gapped client deployments.",
         "Implemented Prometheus and Grafana observability with Pushgateway for ephemeral job metrics, SLA dashboards, and SQLite-backed regression tracking.",
