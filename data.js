@@ -1,7 +1,7 @@
 window.SITE_DATA = {
   meta: {
     name: "Angelos Fikias",
-    role: "Associate Platform Engineer",
+    role: "Platform Engineer",
     company: "Dataviva",
     location: "Thessaloniki, Greece",
     email: "angelosfikias@gmail.com",
@@ -298,6 +298,11 @@ window.SITE_DATA = {
       date: "Nov 2025",
     },
     {
+      name: "Backstage Fundamentals",
+      issuer: "The Linux Foundation",
+      date: "Nov 2025",
+    },
+    {
       name: "Introduction to Jenkins",
       issuer: "The Linux Foundation",
       date: "Nov 2025",
@@ -314,12 +319,7 @@ window.SITE_DATA = {
       date: "Sep 2025",
     },
     {
-      name: "Software Architecture Foundations",
-      issuer: "LinkedIn",
-      date: "Aug 2025",
-    },
-    {
-      name: "Enterprise Architecture Foundations",
+      name: "Enterprise and Software Architecture Foundations",
       issuer: "LinkedIn",
       date: "Aug 2025",
     },
