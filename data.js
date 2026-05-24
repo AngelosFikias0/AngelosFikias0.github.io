@@ -16,7 +16,7 @@ window.SITE_DATA = {
     { type: "blank" },
     { type: "brace", text: "{" },
     { type: "field", key: "name", value: "Angelos Fikias" },
-    { type: "field", key: "role", value: "Associate Platform Engineer" },
+    { type: "field", key: "role", value: "Platform Engineer" },
     { type: "field", key: "company", value: "Dataviva" },
     { type: "field", key: "location", value: "Thessaloniki, Greece" },
     {
@@ -51,7 +51,7 @@ window.SITE_DATA = {
   about: {
     bio: [
       "I'm a platform engineer focused on building and operating the infrastructure that lets product teams ship reliably and fast. My work spans Kubernetes cluster ownership, CI/CD pipeline design, observability stacks, and automation tooling, from initial commit to production rollout.",
-      "Currently an <b>Associate Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cloud-native AI-driven retail platform.",
+      "Currently an <b>Platform Engineer at Dataviva</b>, where I own Kubernetes infrastructure, CI/CD pipelines, and observability stacks for a cloud-native AI-driven retail platform.",
       "My philosophy: <b>automate everything, measure what matters, own the outcome.</b>",
     ],
     stats: [
