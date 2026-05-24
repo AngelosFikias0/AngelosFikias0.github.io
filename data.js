@@ -300,7 +300,7 @@ window.SITE_DATA = {
     {
       name: "Backstage Fundamentals",
       issuer: "The Linux Foundation",
-      date: "Nov 2025",
+      date: "May 2026",
     },
     {
       name: "Introduction to Jenkins",
