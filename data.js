@@ -62,13 +62,7 @@ window.SITE_DATA = {
     ],
   },
 
-  mainStack: [
-    "Kubernetes",
-    "Docker",
-    "Helm",
-    "ArgoCD",
-    "CI/CD",
-  ],
+  mainStack: ["Kubernetes", "Docker", "Helm", "ArgoCD", "CI/CD"],
 
   stack: [
     {
@@ -101,35 +95,17 @@ window.SITE_DATA = {
     {
       name: "Observability",
       type: "tags",
-      items: [
-        "Prometheus",
-        "Grafana",
-        "Pushgateway",
-        "MinIO",
-        "SQLite",
-      ],
+      items: ["Prometheus", "Grafana", "Pushgateway", "MinIO", "SQLite"],
     },
     {
       name: "Testing & Automation",
       type: "tags",
-      items: [
-        "Artillery",
-        "Playwright",
-        "K6",
-        "Bash",
-        "PowerShell",
-      ],
+      items: ["Artillery", "Playwright", "K6", "Bash", "PowerShell"],
     },
     {
       name: "Languages",
       type: "tags",
-      items: [
-        "Python",
-        "JavaScript",
-        "Node.js",
-        "Java",
-        "SQL",
-      ],
+      items: ["Python", "JavaScript", "Node.js", "Java", "SQL"],
     },
   ],
 
@@ -238,7 +214,7 @@ window.SITE_DATA = {
       bullets: [
         "Operated Kubernetes clusters using Docker, Helm, Jenkins, and Linux across production workloads.",
         "Designed a distributed E2E performance testing infrastructure — tooling evaluation, architecture design, and initial K8s implementation.",
-        "Deployed Countly analytics on Kubernetes via Helm, selected over PostHog based on operational risk analysis. Delivered full deployment documentation and troubleshooting playbooks.",
+        "Deployed Product analytics tool on Kubernetes via Helm and delivered full deployment documentation and troubleshooting playbooks.",
         "Integrated Prometheus and Grafana observability, and automated workflows via Bash, Python, and JavaScript.",
       ],
       tags: [
