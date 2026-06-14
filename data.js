@@ -113,7 +113,7 @@ window.SITE_DATA = {
     {
       type: "platform tooling · production",
       name: "Cloud-Native Browser Load Testing Platform",
-      desc: "Distributed E2E browser load testing platform on Kubernetes, running real Playwright sessions at scale via Artillery with VU auto-splitting, wave-based batch execution, and six configurable load profiles. Enabled data-driven architectural validation before enterprise client go-live — surfacing performance insights that informed platform-wide architectural decisions. Playwright workers run as isolated Kubernetes Jobs per wave with CSV-driven test data injection and per-session video capture. An Angular-aware test generator leverages a structured diagnostic knowledge base to auto-fix 35+ known E2E pitfalls and surface targeted remediation for unresolved patterns. Helm-based deployments with environment-specific values enable reproducible releases and atomic upgrades across clusters. Full observability via Prometheus and Grafana with SQLite-based regression tracking. Shipped via GitHub Actions to Azure Container Registry. Deployed to production.",
+      desc: "Distributed E2E browser load testing platform on Kubernetes, running real Playwright sessions at scale via Artillery with VU auto-splitting, wave-based batch execution, and six load profiles. Enabled data-driven architectural validation before enterprise client go-live, surfacing insights that informed platform-wide decisions. Playwright workers run as isolated Kubernetes Jobs per wave, with CSV-driven test data, per-session video capture, and a zero-dependency reporting engine. Includes an Angular-aware test generator with a diagnostic knowledge base for auto-resolving E2E pitfalls. Full observability via Prometheus/Grafana with SQLite regression tracking, shipped via GitHub Actions to ACR and deployed to production.",
       stack: [
         "Python",
         "Artillery",
@@ -188,10 +188,10 @@ window.SITE_DATA = {
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
       bullets: [
-        "Designed and shipped a Kubernetes-native E2E load testing platform (Playwright + Artillery) that enabled data-driven architectural validation before enterprise client go-live. Implemented ephemeral job-based execution, VU auto-splitting, wave-based orchestration, and granular observability - surfacing performance insights that informed platform-wide architectural decisions.",
-        "Managed multi-cluster infrastructure via Rancher (K3s) and ArgoCD App of Apps GitOps delivery across internal, external, and client environments.",
-        "Automated image build and delivery pipelines via Gitea Actions to Harbor and Azure Container Registry for air-gapped client deployments.",
-        "Implemented Prometheus and Grafana observability with Pushgateway for ephemeral job metrics, SLA dashboards, and SQLite-backed regression tracking.",
+        "Designed and shipped a Kubernetes-native E2E load testing platform (Playwright + Artillery) - ephemeral job model, VU auto-splitting, wave-based orchestration, and granular observability, enabling data-driven architectural decisions before enterprise client go-live.",
+        "Managed multi-cluster infrastructure via Rancher (K3s), ArgoCD App of Apps GitOps, multi-tier Helm charts, and Jenkins RBAC-scoped pipelines across internal, external, and client environments; automated image delivery to Harbor and ACR for air-gapped deployments.",
+        "Implemented Prometheus/Grafana observability with Pushgateway for ephemeral job metrics, SLA dashboards, and SQLite-backed regression tracking, turning load test runs into auditable performance baselines.",
+        "Drove architecture decisions end to end, tool evaluation, system design, and delivery from prototype to production.",
       ],
       tags: [
         "Kubernetes",
