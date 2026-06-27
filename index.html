@@ -690,9 +690,9 @@
 
     .hero-sub {
       margin-top: 1.2rem;
-      color: var(--m3);
-      font-size: 12px;
-      line-height: 1.9;
+      color: var(--w2);
+      font-size: 13px;
+      line-height: 1.85;
     }
 
     .hero-ctas {
@@ -758,14 +758,6 @@
       border-color: var(--c);
       color: var(--c);
       box-shadow: var(--cglow);
-    }
-
-    /* ── ABOUT ── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
-      align-items: start;
     }
 
     .card {
@@ -912,10 +904,10 @@
     }
 
     .scat-name {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
       color: var(--c);
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       text-align: center;
       line-height: 1.3;
@@ -936,8 +928,8 @@
       color: var(--gd);
       border-radius: 4px;
       padding: 3px 9px;
-      font-size: 10px;
-      letter-spacing: 0.04em;
+      font-size: 11px;
+      letter-spacing: 0.03em;
       transition: all 0.15s;
       cursor: default;
     }
@@ -997,9 +989,13 @@
 
     /* ── PROJECTS ── */
     .proj-grid {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 1.4rem;
+    }
+
+    .pcard:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
     }
 
     .pcard {
@@ -1113,9 +1109,9 @@
     }
 
     .pdesc {
-      color: var(--m2);
-      font-size: 11px;
-      line-height: 1.85;
+      color: var(--m3);
+      font-size: 12px;
+      line-height: 1.9;
     }
 
     .pstack {
@@ -1132,8 +1128,8 @@
       color: var(--cd);
       border-radius: 3px;
       padding: 2px 8px;
-      font-size: 10px;
-      letter-spacing: 0.05em;
+      font-size: 11px;
+      letter-spacing: 0.03em;
     }
 
     /* ── EXPERIENCE ── */
@@ -1184,9 +1180,9 @@
     }
 
     .exp-period {
-      font-size: 10px;
+      font-size: 11px;
       color: var(--g);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       margin-bottom: 5px;
     }
 
@@ -1198,27 +1194,27 @@
 
     .exp-co {
       color: var(--c);
-      font-size: 12px;
-      margin-bottom: 0.75rem;
+      font-size: 12.5px;
+      margin-bottom: 0.85rem;
     }
 
     .exp-desc {
-      color: var(--m2);
-      font-size: 12px;
-      line-height: 1.85;
+      color: var(--m3);
+      font-size: 12.5px;
+      line-height: 1.9;
     }
 
     .exp-list {
       list-style: none;
-      color: var(--m2);
-      font-size: 12px;
-      line-height: 1.85;
+      color: var(--m3);
+      font-size: 12.5px;
+      line-height: 1.9;
     }
 
     .exp-list li {
       padding-left: 1.2rem;
       position: relative;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.6rem;
     }
 
     .exp-list li::before {
@@ -1241,8 +1237,8 @@
       color: var(--p);
       border-radius: 3px;
       padding: 2px 8px;
-      font-size: 10px;
-      letter-spacing: 0.05em;
+      font-size: 11px;
+      letter-spacing: 0.03em;
     }
 
     /* ── CERTS ── */
@@ -1975,6 +1971,16 @@
       font-size: 14px;
     }
 
+    @media (max-width: 900px) {
+      .proj-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pcard:last-child:nth-child(odd) {
+        grid-column: auto;
+      }
+    }
+
     @media (max-width: 768px) {
       nav {
         padding: 0 1.2rem;
@@ -2004,7 +2010,6 @@
         padding: 3.5rem 1.2rem;
       }
 
-      .about-grid,
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -2037,7 +2042,7 @@
       angelosfikias<em>.dev</em>
     </a>
     <ul class="n-links">
-      <li><a href="#about">About</a></li>
+      <li><a href="#hero">About</a></li>
       <li><a href="#skills">Stack</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -2056,7 +2061,7 @@
   <!-- MOBILE MENU -->
   <div id="mobile-menu" role="navigation" aria-label="Mobile navigation">
     <ul>
-      <li><a href="#about">About</a></li>
+      <li><a href="#hero">About</a></li>
       <li><a href="#skills">Stack</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -2128,6 +2133,11 @@
       <canvas id="hero-canvas"></canvas>
       <div class="spotlight" id="spotlight"></div>
       <div class="hero-inner">
+        <div class="hero-right">
+          <div class="hero-hl rv" id="hero-hl"></div>
+          <p class="hero-sub rv" id="hero-sub" style="transition-delay: 0.14s"></p>
+          <div class="hero-ctas rv" id="hero-ctas" style="transition-delay: 0.28s"></div>
+        </div>
         <div class="hero-left rv">
           <div class="tw">
             <div class="tw-bar">
@@ -2139,35 +2149,6 @@
             <div class="tw-body" id="tw-body"></div>
           </div>
         </div>
-        <div class="hero-right">
-          <div class="hero-hl rv" id="hero-hl"></div>
-          <p class="hero-sub rv" id="hero-sub" style="transition-delay: 0.14s"></p>
-          <div class="hero-ctas rv" id="hero-ctas" style="transition-delay: 0.28s"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="wrap">
-        <div class="sh rv">
-          <span class="sh-n">01.</span>
-          <h2>About</h2>
-        </div>
-        <div class="about-grid">
-          <div class="rv">
-            <div class="card">
-              <div class="card-h">
-                <div class="led"></div>
-                about_me.md
-              </div>
-              <div class="card-b" id="about-bio"></div>
-            </div>
-          </div>
-          <div class="rv" style="transition-delay: 0.12s">
-            <div class="stats" id="about-stats"></div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -2175,7 +2156,7 @@
     <section id="skills">
       <div class="wrap">
         <div class="sh rv">
-          <span class="sh-n">02.</span>
+          <span class="sh-n">01.</span>
           <h2>Stack</h2>
         </div>
         <div class="skills-grid" id="skills-grid"></div>
@@ -2186,7 +2167,7 @@
     <section id="projects">
       <div class="wrap">
         <div class="sh rv">
-          <span class="sh-n">03.</span>
+          <span class="sh-n">02.</span>
           <h2>Projects</h2>
         </div>
         <div class="proj-grid" id="proj-grid"></div>
@@ -2197,7 +2178,7 @@
     <section id="experience">
       <div class="wrap">
         <div class="sh rv">
-          <span class="sh-n">04.</span>
+          <span class="sh-n">03.</span>
           <h2>Experience</h2>
         </div>
         <div class="timeline" id="timeline"></div>
@@ -2208,7 +2189,7 @@
     <section id="certs">
       <div class="wrap">
         <div class="sh rv">
-          <span class="sh-n">05.</span>
+          <span class="sh-n">04.</span>
           <h2>Certifications</h2>
         </div>
         <div class="certs-filter rv" id="certs-filter"></div>
@@ -2220,7 +2201,7 @@
     <section id="contact">
       <div class="wrap">
         <div class="sh rv">
-          <span class="sh-n">06.</span>
+          <span class="sh-n">05.</span>
           <h2>Contact</h2>
         </div>
         <div class="contact-grid">
@@ -2252,7 +2233,6 @@
         meta,
         terminal,
         hero,
-        about,
         stack,
         projects,
         experience,
@@ -2430,23 +2410,6 @@
       });
 
       /* ═══════════════════════════════════════
-     ABOUT
-  ═══════════════════════════════════════ */
-      const bioEl = document.getElementById("about-bio");
-      about.bio.forEach((p) => bioEl.appendChild(el("p", null, p)));
-      const statsEl = document.getElementById("about-stats");
-      about.stats.forEach((s) =>
-        statsEl.appendChild(
-          el(
-            "div",
-            "stat",
-            `<div class="stat-n">${s.value}</div><div class="stat-l">${s.label}</div>`,
-          ),
-        ),
-      );
-
-
-      /* ═══════════════════════════════════════
      STACK
   ═══════════════════════════════════════ */
       const sg = document.getElementById("skills-grid");
@@ -2539,10 +2502,6 @@
         {
           label: "Architecture & Agile",
           match: (c) => /architect|agile|scrum/i.test(c.name),
-        },
-        {
-          label: "Security & Languages",
-          match: (c) => /cybersecurity|java|blockchain/i.test(c.name),
         },
       ];
       const cf = document.getElementById("certs-filter");
@@ -2683,37 +2642,6 @@
         { threshold: 0.2 },
       );
       document.querySelectorAll(".scat").forEach((el) => bo.observe(el));
-
-      /* ═══════════════════════════════════════
-     COUNT-UP STATS
-  ═══════════════════════════════════════ */
-      new IntersectionObserver(
-        (es) => {
-          es.forEach((e) => {
-            if (!e.isIntersecting) return;
-            e.target.querySelectorAll(".stat-n").forEach((el) => {
-              const raw = el.textContent.trim();
-              const suffix = raw.replace(/[\d.]/g, "");
-              const target = parseFloat(raw);
-              if (isNaN(target)) return;
-              let cur = 0,
-                dur = 1400,
-                step = 16;
-              const inc = target / (dur / step);
-              const tick = () => {
-                cur = Math.min(cur + inc, target);
-                el.textContent =
-                  (Number.isInteger(target)
-                    ? Math.round(cur)
-                    : cur.toFixed(1)) + suffix;
-                if (cur < target) setTimeout(tick, step);
-              };
-              tick();
-            });
-          });
-        },
-        { threshold: 0.5 },
-      ).observe(document.querySelector(".stats"));
 
       /* ═══════════════════════════════════════
      SECTION HEADING TYPING
@@ -3193,9 +3121,8 @@
             usage: "ls",
             run: () => {
               sep();
-              line(`total 6`);
+              line(`total 5`);
               const dirs = [
-                "about",
                 "skills",
                 "projects",
                 "experience",
@@ -3225,7 +3152,6 @@
             usage: "cd [section]",
             run: (args) => {
               const map = {
-                about: "about",
                 skills: "skills",
                 stack: "skills",
                 projects: "projects",
@@ -3261,7 +3187,6 @@
             usage: "open [section]",
             run: (args) => {
               const map = {
-                about: "#about",
                 skills: "#skills",
                 stack: "#skills",
                 projects: "#projects",
