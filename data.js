@@ -99,20 +99,6 @@ window.SITE_DATA = {
       github: "https://github.com/AngelosFikias0/Safe_car_insurance_System",
     },
     {
-      type: "distributed systems · backend · university",
-      name: "Java Network Services Hub",
-      desc: "Multi-protocol distributed service framework supporting HTTP, TCP, UDP, and RMI communication. Concurrent request handling via thread pooling across all protocols. PostgreSQL persistence with clean separation between transport and application layers.",
-      stack: ["Java", "Multi-threading", "Sockets", "RMI", "PostgreSQL"],
-      github: "https://github.com/AngelosFikias0/java-network-services-hub",
-    },
-    {
-      type: "full-stack · web · university",
-      name: "Full-Stack Blog Platform",
-      desc: "LAMP stack blog platform with role-based access control. Separate admin and user dashboards driven by session-based role resolution. Parameterized queries throughout for SQL injection prevention.",
-      stack: ["PHP", "MySQL", "Apache", "Linux", "HTML5", "CSS3"],
-      github: "https://github.com/AngelosFikias0/blog-web-app",
-    },
-    {
       type: "mobile · backend · university",
       name: "TikiPark — Smart Parking App",
       desc: "Offline-first Android parking app with real-time Google Maps integration and SQLite caching. RBAC across Admin/User/Guest tiers with a modular auth system. RESTful PHP/MySQL backend.",
