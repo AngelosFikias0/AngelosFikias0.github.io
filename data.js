@@ -88,14 +88,9 @@ window.SITE_DATA = {
       type: "self-directed · systems engineering",
       name: "Docker Lab — Production Container Engineering Lab",
       period: "May 2026 – Jul 2026",
-      desc: "Self-directed container engineering lab spanning the full stack from Linux kernel primitives to production orchestration — built to go beyond tutorials into how containers actually work at the kernel and runtime level.",
-      impact: [
-        "Designed 13 progressive modules across the full container lifecycle — images, networking, storage, performance, security hardening, multi-container orchestration, observability, Swarm, and Kubernetes — each with runnable exercises.",
-        "Built production-shaped CI/CD with parallel matrix builds across 13 Dockerfiles, Compose validation gates, BuildKit GHA cache, and automated semver releases publishing versioned images to GitHub Container Registry.",
-        "Deployed a complete metrics pipeline (cAdvisor + Prometheus + Grafana) with OOM, CPU throttle, and memory pressure alert rules, auto-provisioned with zero manual configuration.",
-        "Wrote 8 technical reference docs on Docker internals, Linux namespaces and cgroups, overlay networking, KVM/QEMU virtualization, OCI runtimes, and 12-Factor methodology, mapped to Kubernetes equivalents throughout.",
-      ],
+      desc: "Self-directed container engineering lab covering the full stack from Linux kernel primitives to production orchestration. 13 progressive modules (images, networking, storage, security, Swarm, Kubernetes), CI/CD with matrix builds across 13 Dockerfiles publishing to GHCR, a full Prometheus/Grafana metrics pipeline with OOM/CPU alerting, and 8 written references on container internals.",
       stack: ["Docker", "Kubernetes", "Linux", "GitHub Actions", "Prometheus", "Grafana", "Spring Boot", "PostgreSQL", "Python", "Bash"],
+      github: "https://github.com/AngelosFikias0/docker-lab",
     },
     {
       type: "enterprise · full-stack · university",

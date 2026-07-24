@@ -1891,18 +1891,26 @@
       projects.forEach((p, i) => {
         const card = el("div", "pcard rv");
         card.style.transitionDelay = `${i * 0.07}s`;
+        const impactHTML = p.impact
+          ? `<ul class="exp-list" style="margin-top:0.8rem">${p.impact.map((b) => `<li>${b}</li>`).join("")}</ul>`
+          : "";
+        const periodHTML = p.period
+          ? `<div class="ptype" style="margin-top:2px">${p.period}</div>`
+          : "";
         card.innerHTML = `
         <div class="pcard-h">
           <span class="ptype">${p.type}</span>
           <div class="plinks">
-            <a href="${p.github}" target="_blank" rel="noopener">
+            ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener">
               <svg width="13" height="13"><use href="#ico-github"/></svg> github
-            </a>
+            </a>` : ""}
           </div>
         </div>
         <div class="pcard-b">
           <div class="pname">${p.name}</div>
+          ${periodHTML}
           <p class="pdesc">${p.desc}</p>
+          ${impactHTML}
         </div>
         <div class="pstack">${p.stack.map((s) => `<span class="stag">${s}</span>`).join("")}</div>`;
         card.addEventListener("mousemove", (e) => {
