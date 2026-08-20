@@ -17,4 +17,4 @@ To update content, edit `data.js` and push. Netlify redeploys automatically.
 python -m http.server 8000   # local dev
 ```
 
-> Open via `localhost`, not `file://` — browser blocks `data.js` loading over file protocol.
+> Open via `localhost`, not `file://` - browser blocks `data.js` loading over file protocol.

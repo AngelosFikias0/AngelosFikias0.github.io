@@ -86,7 +86,7 @@ window.SITE_DATA = {
   projects: [
     {
       type: "self-directed · systems engineering",
-      name: "Docker Lab — Production Container Engineering Lab",
+      name: "Docker Lab - Production Container Engineering Lab",
       period: "May 2026 – Jul 2026",
       desc: "Self-directed container engineering lab covering the full stack from Linux kernel primitives to production orchestration. 13 progressive modules (images, networking, storage, security, Swarm, Kubernetes), CI/CD with matrix builds across 13 Dockerfiles publishing to GHCR, a full Prometheus/Grafana metrics pipeline with OOM/CPU alerting, and 8 written references on container internals.",
       stack: ["Docker", "Kubernetes", "Linux", "GitHub Actions", "Prometheus", "Grafana", "Spring Boot", "PostgreSQL", "Python", "Bash"],
@@ -94,21 +94,21 @@ window.SITE_DATA = {
     },
     {
       type: "enterprise · full-stack · university",
-      name: "EfficienCity — Municipal Resource Management",
+      name: "EfficienCity - Municipal Resource Management",
       desc: "End-to-end enterprise platform for inter-municipality asset sharing and real-time inventory tracking. Full SDLC ownership: BPMN AS-IS/TO-BE modeling, stakeholder mapping, MoSCoW. Microservices on Azure AKS with Kafka event-driven communication, PostgreSQL/ClickHouse data pipeline, and an immutable audit ledger for GDPR compliance. React + TypeScript MVP across three role-based interfaces.",
       stack: ["React", "TypeScript", "Spring Boot", "PostgreSQL", "ClickHouse", "Kafka", "Docker", "Azure AKS", "BPMN"],
       github: "https://github.com/AngelosFikias0/Resource_Management_System",
     },
     {
       type: "enterprise architecture · university",
-      name: "SafeCar — Enterprise Insurance Platform",
+      name: "SafeCar - Enterprise Insurance Platform",
       desc: "Enterprise insurance platform covering the full policy lifecycle from proposals through claims. Applied TOGAF and Zachman frameworks to align architecture with business strategy. Process transformation modeled end-to-end via BPMN and UML.",
       stack: ["Java", "TOGAF", "Zachman", "BPMN", "UML", "Figma"],
       github: "https://github.com/AngelosFikias0/Safe_car_insurance_System",
     },
     {
       type: "mobile · backend · university",
-      name: "TikiPark — Smart Parking App",
+      name: "TikiPark - Smart Parking App",
       desc: "Offline-first Android parking app with real-time Google Maps integration and SQLite caching. RBAC across Admin/User/Guest tiers with a modular auth system. RESTful PHP/MySQL backend.",
       stack: ["Java", "Android SDK", "PHP", "MySQL", "SQLite", "Google Maps API", "REST"],
       github: "https://github.com/AngelosFikias0/TikiPark",
