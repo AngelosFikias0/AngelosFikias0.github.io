@@ -48,8 +48,6 @@ window.SITE_DATA = {
     ],
   },
 
-  mainStack: ["Kubernetes", "Docker", "Helm", "ArgoCD", "CI/CD"],
-
   stack: [
     {
       name: "Cloud & Infrastructure",
@@ -120,15 +118,15 @@ window.SITE_DATA = {
       period: "JAN 2026 – PRESENT",
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
-      desc: "Building and operating cloud-native infrastructure for a B2B SaaS product in retail forecasting and supply chain.",
+      desc: "Platform Engineer owning cloud-native infrastructure end to end for a multi-client B2B SaaS platform in retail forecasting and supply chain, across on-prem and cloud, from cluster provisioning to production incident response.",
       bullets: [
-        "Designed and built a Kubernetes-native E2E load and performance testing platform (Playwright, Artillery) from scratch, running production-scale tests with 150+ concurrent users. Findings drove backend architecture redesigns ahead of enterprise client launch.",
-        "Manage CI/CD pipeline architecture org-wide (Jenkins, GitHub/Gitea Actions) and contribute to a full version-control platform migration across engineering teams, including workflow design and team training.",
-        "Improved backup and recovery processes for critical production systems through hands-on testing and analysis.",
-        "Operate multi-cluster Kubernetes infrastructure (K8s, K3s, ArgoCD GitOps, Helm, RBAC) spanning dev, staging, and production, with Docker-based workloads throughout; build and own internal developer tooling and organization-wide technical documentation.",
-        "Own end-to-end incident response and production support across internal, client, and multi-environment deployments, using Prometheus/Grafana and Linux-level diagnostics for monitoring, logging, and root cause analysis.",
+        "Designed and built a Kubernetes-native E2E and load-testing platform from scratch (Playwright, Artillery), running production-scale tests at high concurrency; findings drove backend architecture redesigns ahead of an enterprise client launch.",
+        "Provision and operate client environments end to end with Terraform (Azure AKS, GitOps, K8s, K3s, Helm, RBAC) across multi-cluster infrastructure spanning dev and production.",
+        "Own org-wide CI/CD architecture (Jenkins, GitHub/Gitea Actions) and contribute to a full version-control platform migration across engineering teams, including workflow design and team training; build and own internal developer tooling and organization-wide documentation.",
+        "Own production incident response across all client environments (Grafana, Prometheus, ELK), root-causing infrastructure, database, and node-level failures into postmortems.",
+        "Engineered disaster recovery for critical production databases (CloudNativePG, Velero): designed failover, point-in-time, and continuous-backup strategy, significantly reducing restore time and improving recovery reliability.",
       ],
-      tags: ["Kubernetes", "Helm", "Docker", "ArgoCD", "Rancher", "Jenkins", "GitHub Actions", "Prometheus", "Grafana", "RBAC", "Linux", "Azure", "Python"],
+      tags: ["Kubernetes", "Terraform", "Azure AKS", "K3s", "Helm", "RBAC", "GitOps", "Jenkins", "GitHub Actions", "Gitea Actions", "Prometheus", "Grafana", "ELK", "CloudNativePG", "Velero", "Playwright", "Artillery"],
     },
     {
       period: "OCT 2025 – DEC 2025",

@@ -29,7 +29,13 @@
   <meta property="og:description"
     content="Platform Engineer building cloud-native infrastructure at scale. Kubernetes, GitOps, CI/CD & observability." />
   <meta property="og:image" content="https://angelosfikias.dev/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Angelos Fikias - Platform Engineer" />
+  <meta name="twitter:description"
+    content="Platform Engineer building cloud-native infrastructure at scale. Kubernetes, GitOps, CI/CD & observability." />
+  <meta name="twitter:image" content="https://angelosfikias.dev/og-image.png" />
   <meta name="theme-color" content="#060910" />
   <script type="application/ld+json">
   {
@@ -55,10 +61,11 @@
     },
     "email": "mailto:angelosfikias@gmail.com",
     "knowsAbout": [
-      "Kubernetes", "Docker", "Helm", "Rancher", "Terraform", "Ansible",
-      "ArgoCD", "Jenkins", "GitHub Actions", "GitOps", "CI/CD",
-      "Prometheus", "Grafana", "Observability", "HashiCorp Vault",
-      "Cloud Infrastructure", "Azure", "Linux", "Python", "Java"
+      "Kubernetes", "Docker", "Helm", "K3s", "Rancher", "Terraform", "Ansible",
+      "Azure AKS", "ArgoCD", "Jenkins", "GitHub Actions", "GitOps", "CI/CD",
+      "Prometheus", "Grafana", "ELK", "Observability", "HashiCorp Vault",
+      "CloudNativePG", "Velero", "Disaster Recovery", "Cloud Infrastructure",
+      "Azure", "Linux", "Python", "Java"
     ],
     "sameAs": [
       "https://www.linkedin.com/in/angelos-fikias/",
@@ -67,6 +74,8 @@
   }
   </script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
@@ -84,21 +93,18 @@
       --bg: #060910;
       --bg2: #0b0f18;
       --bg3: #101520;
-      --bg4: #161c28;
       --border: #1a2235;
       --border2: #223045;
       --g: #00ff88;
       --gd: #00cc6a;
-      --g2: #00ff8844;
       --c: #00d4ff;
       --cd: #00aacc;
       --y: #ffd060;
       --p: #c084fc;
-      --r: #ff6b6b;
       --w: #e2e8f4;
       --w2: #b0bcd4;
       --m: #3d4f6a;
-      --m2: #5a7090;
+      --m2: #6a84a8;
       --m3: #7a90a8;
       --glow: 0 0 32px rgba(0, 255, 136, 0.22);
       --glows: 0 0 12px rgba(0, 255, 136, 0.14);
@@ -526,7 +532,7 @@
 
     .tw-title {
       margin-left: 10px;
-      font-size: 10px;
+      font-size: 11px;
       color: var(--m2);
       letter-spacing: 0.08em;
       flex: 1;
@@ -841,51 +847,6 @@
       box-shadow: 0 2px 8px rgba(0, 255, 136, 0.15);
     }
 
-    .bar-item {
-      padding: 9px 1.1rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .bar-item:first-child {
-      border-top: none;
-    }
-
-    .bar-top {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 6px;
-      font-size: 11px;
-    }
-
-    .bar-lbl {
-      color: var(--w2);
-    }
-
-    .bar-pct {
-      color: var(--m2);
-    }
-
-    .bar-track {
-      height: 2px;
-      background: var(--border);
-      border-radius: 1px;
-      overflow: hidden;
-    }
-
-    .bar-fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--g), var(--c));
-      border-radius: 1px;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 1.1s var(--ease-out-expo) 0.3s;
-      box-shadow: 0 0 6px rgba(0, 255, 136, 0.4);
-    }
-
-    .bar-fill.on {
-      transform: scaleX(1);
-    }
-
     /* ── PROJECTS ── */
     .proj-grid {
       display: grid;
@@ -963,7 +924,7 @@
     }
 
     .ptype {
-      font-size: 10px;
+      font-size: 11px;
       color: var(--m2);
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -977,7 +938,7 @@
     .plinks a {
       color: var(--m2);
       text-decoration: none;
-      font-size: 10px;
+      font-size: 11px;
       letter-spacing: 0.05em;
       transition: color 0.2s;
       display: flex;
@@ -1155,7 +1116,7 @@
       border-radius: 4px;
       padding: 4px 13px;
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 11px;
       letter-spacing: 0.06em;
       cursor: none;
       transition: all 0.18s;
@@ -1211,7 +1172,7 @@
     }
 
     .cert-issuer {
-      font-size: 10px;
+      font-size: 11px;
       color: var(--m2);
       margin-top: 3px;
       letter-spacing: 0.04em;
@@ -1293,7 +1254,7 @@
     }
 
     .cl-platform {
-      font-size: 10px;
+      font-size: 11px;
       color: var(--m2);
       letter-spacing: 0.09em;
       text-transform: uppercase;
@@ -1329,7 +1290,7 @@
       background: var(--bg3);
       border-bottom: 1px solid var(--border);
       padding: 9px 14px;
-      font-size: 10px;
+      font-size: 11px;
       color: var(--m2);
       display: flex;
       align-items: center;
@@ -1392,10 +1353,6 @@
       color: var(--w);
     }
 
-    .footer-heart {
-      color: var(--r);
-    }
-
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner {
@@ -1405,6 +1362,14 @@
 
       .hero-hl {
         font-size: clamp(2.2rem, 6vw, 3rem);
+      }
+
+      .proj-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pcard:last-child:nth-child(odd) {
+        grid-column: auto;
       }
     }
 
@@ -1507,16 +1472,6 @@
       font-size: 14px;
     }
 
-    @media (max-width: 900px) {
-      .proj-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .pcard:last-child:nth-child(odd) {
-        grid-column: auto;
-      }
-    }
-
     @media (max-width: 768px) {
       nav {
         padding: 0 1.2rem;
@@ -1579,7 +1534,7 @@
 
       <h2>Experience</h2>
       <ul>
-        <li><strong>Associate Platform Engineer, Dataviva</strong> (Jan 2026 &ndash; Present) - Building and operating cloud-native infrastructure for a B2B SaaS product in retail forecasting and supply chain. Designed a Kubernetes-native E2E load and performance testing platform, manages org-wide CI/CD pipeline architecture, operates multi-cluster Kubernetes infrastructure, and owns incident response and production support.</li>
+        <li><strong>Associate Platform Engineer, Dataviva</strong> (Jan 2026 &ndash; Present) - Owns cloud-native infrastructure end to end for a multi-client B2B SaaS platform in retail forecasting and supply chain, across on-prem and cloud. Built a Kubernetes-native E2E and load-testing platform from scratch, provisions client environments with Terraform (Azure AKS, K3s, Helm), owns org-wide CI/CD architecture, owns production incident response (Grafana, Prometheus, ELK), and engineered disaster recovery for production databases (CloudNativePG, Velero).</li>
         <li><strong>DevOps Engineer Intern, Dataviva</strong> (Oct 2025 &ndash; Dec 2025) - Operated Kubernetes clusters, evaluated tooling and designed initial architecture for a distributed E2E performance testing platform, deployed a product analytics tool via Helm, integrated Prometheus/Grafana observability.</li>
         <li><strong>BSc Applied Computer Science, University of Macedonia</strong> (Oct 2022 &ndash; Sep 2026), GPA 7.46 - Specialization in Information Systems. Coursework in software engineering, distributed systems, IT infrastructure, and digital strategy.</li>
       </ul>
@@ -2168,21 +2123,6 @@
         { threshold: 0.08 },
       );
       document.querySelectorAll(".rv").forEach((el) => ro.observe(el));
-
-      const bo = new IntersectionObserver(
-        (es) => {
-          es.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target
-                .querySelectorAll(".bar-fill")
-                .forEach((b) => b.classList.add("on"));
-              bo.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.2 },
-      );
-      document.querySelectorAll(".scat").forEach((el) => bo.observe(el));
 
       /* ═══════════════════════════════════════
      SECTION HEADING TYPING
