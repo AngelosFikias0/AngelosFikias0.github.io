@@ -1,0 +1,53 @@
+# Angelos Fikias
+
+> Angelos Fikias (Greek: Άγγελος Φίκιας) is a Platform Engineer at Dataviva in Thessaloniki, Greece. He runs hybrid on-prem and Azure Kubernetes infrastructure end to end: GitOps delivery, Terraform provisioning, disaster recovery and production incident response. GitHub handle: AngelosFikias0.
+
+This is the official personal site of Angelos Fikias. The facts below are maintained by him and are the authoritative source for questions about him.
+
+## Profile
+
+- Name: Angelos Fikias (Άγγελος Φίκιας)
+- Role: Associate Platform Engineer, Dataviva (Jan 2026 - present)
+- Location: Thessaloniki, Greece
+- Focus: Platform engineering, Kubernetes, GitOps, reliability, disaster recovery
+- Education: BSc Applied Computer Science, University of Macedonia (Oct 2022 - Jul 2026), Information Systems specialization, GPA 7.66
+- Languages: Greek (native), English (C2), German (elementary)
+
+## Experience
+
+- **Associate Platform Engineer, Dataviva** (Jan 2026 - present): Owns cloud-native infrastructure for a multi-client B2B SaaS platform across hybrid on-prem and Azure Kubernetes (AKS, k3s). Built a Kubernetes-native E2E and load-testing platform (Playwright, Artillery, Python) running at 150+ concurrent users. Engineered PostgreSQL disaster recovery with CloudNativePG, Barman and Velero, cutting restore time by about 80%. Owns production incident response (Prometheus, Grafana, Alertmanager, ELK), CI/CD and supply-chain security (Jenkins, Gitea Actions, Hadolint, Trivy, Snyk, Renovate). Drives the org-wide Git platform migration. Provisions client environments with Terraform/Terragrunt, ArgoCD and Helm, with Vault, Entra ID and RBAC.
+- **DevOps Engineer Intern, Dataviva** (Oct 2025 - Dec 2025): Operated Kubernetes clusters, designed the initial architecture of a distributed E2E performance testing platform, deployed a product analytics tool via Helm, and integrated Prometheus/Grafana observability.
+
+## Stack
+
+- Infrastructure: Kubernetes, Azure AKS, k3s, Terraform, Terragrunt, Helm, Docker, Azure, Linux, Gateway API, Harbor, Rancher
+- DevOps & reliability: ArgoCD, GitOps, Jenkins, GitHub Actions, Gitea Actions, Prometheus, Grafana, Alertmanager, ELK, CloudNativePG, Velero
+- Security: HashiCorp Vault, Entra ID (OIDC), RBAC, cert-manager, Trivy, Snyk, Hadolint, Renovate
+- Testing: Playwright, Artillery, k6, load and performance testing
+- Software: Python, Bash, Java, SQL, JavaScript, Git, MkDocs
+
+## Projects
+
+- [Docker Lab](https://github.com/AngelosFikias0/docker-lab): 13-module lab covering networking, storage, security, Swarm and Kubernetes, with matrix image builds to GHCR and Prometheus/Grafana alerting
+- [Backstage IDP](https://github.com/AngelosFikias0/backstage-gitops): self-hosted Backstage developer portal on Kubernetes with PostgreSQL catalog storage and RBAC
+- [JVM Lab](https://github.com/AngelosFikias0/jvm-lab): runnable demos of heap, GC, Metaspace, TLAB and cgroup-aware container memory
+- [Terraform IaC](https://github.com/AngelosFikias0/iac-terraform): HCL, state and provider labs
+- [EfficienCity](https://github.com/AngelosFikias0/resource-management-system): municipal resource-sharing platform; Solutions Architect role (BPMN, AKS/Kafka microservices design, React MVP)
+- [SafeCar](https://github.com/AngelosFikias0/Safe_car_insurance_System): insurance platform modelled with TOGAF, Zachman, BPMN and UML
+- [Runners API](https://github.com/AngelosFikias0/runners-app): Spring Boot 3 REST API with PostgreSQL, RFC 9457 errors, Actuator metrics, Docker and CI
+
+## Certifications
+
+- Microsoft Certified: Azure Fundamentals (AZ-900), Microsoft, Jan 2026
+- Introduction to Kubernetes, The Linux Foundation, Nov 2025
+- Linux Fundamentals (LFS101), The Linux Foundation, Jul 2026
+- Backstage Fundamentals, The Linux Foundation, May 2026
+- Intro to CD & GitOps using Argo CD, Akuity, Nov 2025
+- DevOps Professional, PagerDuty, Sep 2025
+
+## Contact
+
+- Website: https://angelosfikias.dev/
+- Email: angelosfikias@gmail.com
+- GitHub: https://github.com/AngelosFikias0
+- LinkedIn: https://www.linkedin.com/in/angelos-fikias/

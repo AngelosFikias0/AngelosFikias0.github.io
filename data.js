@@ -7,8 +7,8 @@ window.SITE_DATA = {
     email: "angelosfikias@gmail.com",
     github: "https://github.com/AngelosFikias0",
     linkedin: "https://www.linkedin.com/in/angelos-fikias/",
-    status: "Building production infrastructure",
-    focus: "Platform Engineering · DevOps · Cloud Infrastructure",
+    status: "Running hybrid Kubernetes in production",
+    focus: "Platform Engineering · DevOps · Reliability",
   },
 
   terminal: [
@@ -22,7 +22,7 @@ window.SITE_DATA = {
     {
       type: "field",
       key: "focus",
-      value: "Kubernetes · CI/CD · Observability · Cloud-Native",
+      value: "Kubernetes · GitOps · Disaster Recovery · Platform Engineering",
     },
     {
       type: "field",
@@ -35,7 +35,7 @@ window.SITE_DATA = {
 
   hero: {
     headline: ["Building ", "platforms", " that\noperate reliably."],
-    sub: "Platform Engineer at Dataviva, building Kubernetes infrastructure, CI/CD pipelines, and observability stacks for enterprise-scale systems. Thessaloniki, Greece.",
+    sub: "Platform Engineer at Dataviva, running hybrid Kubernetes infrastructure end to end: GitOps delivery, Terraform provisioning, disaster recovery and production incident response. Thessaloniki, Greece.",
     ctas: [
       { label: "Projects", href: "#projects", style: "primary" },
       {
@@ -50,66 +50,55 @@ window.SITE_DATA = {
 
   stack: [
     {
-      name: "Cloud & Infrastructure",
+      name: "Infrastructure",
       type: "tags",
-      items: ["Kubernetes", "Docker", "Helm", "Rancher", "Terraform", "Ansible", "Azure", "Linux"],
+      items: ["Kubernetes", "Azure AKS", "k3s", "Terraform", "Terragrunt", "Helm", "Docker", "Azure", "Linux", "Gateway API", "Harbor", "Rancher"],
     },
     {
-      name: "CI/CD & GitOps",
+      name: "DevOps & Reliability",
       type: "tags",
-      items: ["ArgoCD", "Jenkins", "GitHub Actions", "Gitea Actions", "GitOps", "Harbor"],
+      items: ["ArgoCD", "GitOps", "Jenkins", "GitHub Actions", "Gitea Actions", "Prometheus", "Grafana", "Alertmanager", "ELK", "CloudNativePG", "Velero"],
     },
     {
-      name: "Observability",
+      name: "Security",
       type: "tags",
-      items: ["Prometheus", "Grafana", "Pushgateway"],
+      items: ["HashiCorp Vault", "Entra ID (OIDC)", "RBAC", "cert-manager", "Trivy", "Snyk", "Hadolint", "Renovate"],
     },
     {
-      name: "Security & Config",
+      name: "Testing",
       type: "tags",
-      items: ["HashiCorp Vault", "Kubernetes Secrets", "RBAC"],
+      items: ["Playwright", "Artillery", "k6", "Load & Performance Testing"],
     },
     {
-      name: "Testing & Automation",
+      name: "Software",
       type: "tags",
-      items: ["Playwright", "Artillery", "K6", "Bash"],
-    },
-    {
-      name: "Languages",
-      type: "tags",
-      items: ["Python", "JavaScript", "Node.js", "Java", "SQL"],
+      items: ["Python", "Bash", "Java", "SQL", "JavaScript", "Git", "MkDocs"],
     },
   ],
 
   projects: [
     {
-      type: "self-directed · systems engineering",
-      name: "Docker Lab - Production Container Engineering Lab",
-      period: "May 2026 – Jul 2026",
-      desc: "Self-directed container engineering lab covering the full stack from Linux kernel primitives to production orchestration. 13 progressive modules (images, networking, storage, security, Swarm, Kubernetes), CI/CD with matrix builds across 13 Dockerfiles publishing to GHCR, a full Prometheus/Grafana metrics pipeline with OOM/CPU alerting, and 8 written references on container internals.",
-      stack: ["Docker", "Kubernetes", "Linux", "GitHub Actions", "Prometheus", "Grafana", "Spring Boot", "PostgreSQL", "Python", "Bash"],
-      github: "https://github.com/AngelosFikias0/docker-lab",
+      type: "self-directed · platform & infrastructure",
+      name: "Platform & Infrastructure Labs",
+      desc: "Self-directed labs from kernel primitives to Kubernetes - a 13-module Docker lab with CI/CD and Prometheus/Grafana alerting, a self-hosted Backstage developer portal, JVM memory and GC internals, and Terraform IaC.",
+      impact: [
+        '<a href="https://github.com/AngelosFikias0/docker-lab" target="_blank" rel="noopener">Docker Lab</a> - networking, storage, security, Swarm and Kubernetes; matrix image builds to GHCR; OOM and CPU-throttling alerts.',
+        '<a href="https://github.com/AngelosFikias0/backstage-gitops" target="_blank" rel="noopener">Backstage IDP</a> - custom build on Kubernetes with PostgreSQL catalog storage, RBAC and a runbook.',
+        '<a href="https://github.com/AngelosFikias0/jvm-lab" target="_blank" rel="noopener">JVM Lab</a> - runnable demos of heap, GC, Metaspace, TLAB and cgroup-aware container memory.',
+        '<a href="https://github.com/AngelosFikias0/iac-terraform" target="_blank" rel="noopener">Terraform IaC</a> - HCL, state and provider labs.',
+      ],
+      stack: ["Docker", "Kubernetes", "Backstage", "Terraform", "Prometheus", "GitHub Actions"],
     },
     {
-      type: "enterprise · full-stack · university",
-      name: "EfficienCity - Municipal Resource Management",
-      desc: "End-to-end enterprise platform for inter-municipality asset sharing and real-time inventory tracking. Full SDLC ownership: BPMN AS-IS/TO-BE modeling, stakeholder mapping, MoSCoW. Microservices on Azure AKS with Kafka event-driven communication, PostgreSQL/ClickHouse data pipeline, and an immutable audit ledger for GDPR compliance. React + TypeScript MVP across three role-based interfaces.",
-      stack: ["React", "TypeScript", "Spring Boot", "PostgreSQL", "ClickHouse", "Kafka", "Docker", "Azure AKS", "BPMN"],
-      github: "https://github.com/AngelosFikias0/Resource_Management_System",
-    },
-    {
-      type: "enterprise architecture · university",
-      name: "SafeCar - Enterprise Insurance Platform",
-      desc: "Enterprise insurance platform covering the full policy lifecycle from proposals through claims. Applied TOGAF and Zachman frameworks to align architecture with business strategy. Process transformation modeled end-to-end via BPMN and UML.",
-      stack: ["Java", "TOGAF", "Zachman", "BPMN", "UML", "Figma"],
-      github: "https://github.com/AngelosFikias0/Safe_car_insurance_System",
-    },
-    {
-      type: "mobile · backend · university",
-      name: "TikiPark - Smart Parking App",
-      desc: "Offline-first Android parking app with real-time Google Maps integration and SQLite caching. RBAC across Admin/User/Guest tiers with a modular auth system. RESTful PHP/MySQL backend.",
-      stack: ["Java", "Android SDK", "PHP", "MySQL", "SQLite", "Google Maps API", "REST"],
-      github: "https://github.com/AngelosFikias0/TikiPark",
+      type: "university & self-directed · software & architecture",
+      name: "Software & Architecture Projects",
+      desc: "Designed enterprise platforms in university team projects, from BPMN and TOGAF modelling to an AKS/Kafka microservices architecture; built a Spring Boot REST API with PostgreSQL and CI.",
+      impact: [
+        '<a href="https://github.com/AngelosFikias0/resource-management-system" target="_blank" rel="noopener">EfficienCity</a> - Solutions Architect on a municipal resource-sharing platform: BPMN AS-IS/TO-BE, AKS/Kafka microservices design, audit ledger and a React MVP.',
+        '<a href="https://github.com/AngelosFikias0/Safe_car_insurance_System" target="_blank" rel="noopener">SafeCar</a> - insurance platform aligned with TOGAF and Zachman; full policy lifecycle in BPMN and UML.',
+        '<a href="https://github.com/AngelosFikias0/runners-app" target="_blank" rel="noopener">Runners API</a> - Spring Boot 3 REST API with RFC 9457 error handling, Actuator metrics, Docker and CI.',
+      ],
+      stack: ["Java", "Spring Boot", "PostgreSQL", "Azure AKS", "Kafka", "BPMN", "TOGAF"],
     },
   ],
 
@@ -118,68 +107,52 @@ window.SITE_DATA = {
       period: "JAN 2026 – PRESENT",
       role: "Associate Platform Engineer",
       company: "Dataviva · Thessaloniki, Greece",
-      desc: "Platform Engineer owning cloud-native infrastructure end to end for a multi-client B2B SaaS platform in retail forecasting and supply chain, across on-prem and cloud, from cluster provisioning to production incident response.",
+      desc: "Owning cloud-native infrastructure for a multi-client B2B SaaS platform: hybrid on-prem and Azure Kubernetes, from provisioning to production incident response.",
       bullets: [
-        "Designed and built a Kubernetes-native E2E and load-testing platform from scratch (Playwright, Artillery), running production-scale tests at high concurrency; findings drove backend architecture redesigns ahead of an enterprise client launch.",
-        "Provision and operate client environments end to end with Terraform (Azure AKS, GitOps, K8s, K3s, Helm, RBAC) across multi-cluster infrastructure spanning dev and production.",
-        "Own org-wide CI/CD architecture (Jenkins, GitHub/Gitea Actions) and contribute to a full version-control platform migration across engineering teams, including workflow design and team training; build and own internal developer tooling and organization-wide documentation.",
-        "Own production incident response across all client environments (Grafana, Prometheus, ELK), root-causing infrastructure, database, and node-level failures into postmortems.",
-        "Engineered disaster recovery for critical production databases (CloudNativePG, Velero): designed failover, point-in-time, and continuous-backup strategy, significantly reducing restore time and improving recovery reliability.",
+        "Designed and built a Kubernetes-native E2E and load-testing platform from scratch (Playwright, Artillery, Python), running production-scale tests at 150+ concurrent users; findings drove backend performance redesigns ahead of an enterprise client launch.",
+        "Engineered PostgreSQL disaster recovery (CloudNativePG, Barman, Velero): point-in-time recovery, failover and continuous backup; cut restore time by ~80% and led a cross-team build of an automated backup retention service.",
+        "Own production incident response (Prometheus, Grafana, Alertmanager, ELK): built alerting for core platform services with Teams notifications, and turn root-cause analyses into postmortems and runbooks.",
+        "Own CI/CD and supply-chain security (Jenkins, Gitea Actions): moved pipelines to version-controlled Jenkinsfiles, automated image builds across release types, and integrated scanning (Hadolint, Trivy, Snyk) and dependency automation (Renovate, Release Please).",
+        "Drive the org-wide migration to a Git-based platform: trained engineering teams on Git workflows, migrated repositories with full history, and administer access, branch protection and CI runners.",
+        "Provision and operate test and production client environments with Terraform/Terragrunt, ArgoCD and Helm (AKS, k3s, Gateway API, Vault, Entra ID, RBAC).",
+        "Build Python packaging and release pipelines for product teams, and GPU infrastructure on Kubernetes for AI workloads.",
+        "Onboard and support engineers across teams (developer environments, cluster access, delivery training); maintain the central platform documentation and drive internal developer platform (IDP) adoption, starting with a Backstage prototype.",
       ],
-      tags: ["Kubernetes", "Terraform", "Azure AKS", "K3s", "Helm", "RBAC", "GitOps", "Jenkins", "GitHub Actions", "Gitea Actions", "Prometheus", "Grafana", "ELK", "CloudNativePG", "Velero", "Playwright", "Artillery"],
+      tags: ["Kubernetes", "Azure AKS", "k3s", "Terraform", "ArgoCD", "Helm", "Jenkins", "Gitea Actions", "Prometheus", "Grafana", "ELK", "CloudNativePG", "Velero", "Vault", "Trivy", "Snyk", "Playwright", "Artillery"],
     },
     {
       period: "OCT 2025 – DEC 2025",
       role: "DevOps Engineer Intern",
       company: "Dataviva · Thessaloniki, Greece",
-      desc: "Built and operated cloud-native infrastructure for an enterprise AI platform serving retail forecasting and supply chain management, during initial onboarding and ramp-up.",
+      desc: "Built and operated cloud-native infrastructure for an enterprise AI SaaS platform during initial onboarding and ramp-up.",
       bullets: [
         "Operated Kubernetes clusters (Docker, Helm, Jenkins, Linux) across production workloads as part of initial platform ramp-up.",
         "Evaluated tooling and designed the initial architecture for a distributed E2E performance testing platform, later built out to production scale.",
         "Deployed a product analytics tool on Kubernetes via Helm and delivered full deployment documentation and troubleshooting playbooks.",
         "Integrated Prometheus/Grafana observability and automated workflows via Bash, Python, and JavaScript.",
       ],
-      tags: ["Kubernetes", "Docker", "Helm", "Jenkins", "ArgoCD", "Prometheus", "Grafana", "Python", "Bash", "Linux"],
+      tags: ["Kubernetes", "Docker", "Helm", "Jenkins", "Prometheus", "Grafana", "Playwright", "k6", "Python", "Bash", "Linux"],
     },
     {
-      period: "OCT 2022 – SEP 2026",
+      period: "OCT 2022 – JUL 2026",
       role: "BSc. Applied Computer Science",
-      company: "University of Macedonia · Thessaloniki, Greece · GPA 7.46",
-      desc: "Specialization in Information Systems. Coursework in software engineering, distributed systems, IT infrastructure, and digital strategy. Delivered team-based projects across the full SDLC.",
-      tags: ["Information Systems", "Distributed Systems", "System Design", "Solution Architecture", "Agile"],
+      company: "University of Macedonia · Thessaloniki, Greece · GPA 7.66",
+      desc: "Specialization in Information Systems. Built foundations in software engineering, distributed systems and enterprise architecture through team-based projects across the full SDLC.",
+      tags: ["Information Systems", "Distributed Systems", "System Design", "Enterprise Architecture", "Agile"],
     },
   ],
 
   certifications: [
-    // ── Cloud & Kubernetes ──
     { name: "Azure Fundamentals (AZ-900)", issuer: "Microsoft", date: "Jan 2026" },
-    { name: "Manage Kubernetes in Google Cloud", issuer: "Google", date: "Dec 2025" },
     { name: "Introduction to Kubernetes", issuer: "The Linux Foundation", date: "Nov 2025" },
-    { name: "Serverless Fundamentals", issuer: "Amazon Web Services", date: "Oct 2025" },
-    // ── Linux & Systems ──
-    {
-      name: "Linux Fundamentals (LFS101)",
-      issuer: "The Linux Foundation",
-      date: "Jul 2026",
-      desc: "Core Linux skills: boot process (BIOS/UEFI, GRUB, systemd), filesystem hierarchy and permissions (ext4, XFS, inodes, chmod/chown), process and user management (UID/EUID, cron, systemctl), shell scripting, and networking fundamentals (ssh, DNS, NFS).",
-    },
-    // ── DevOps & CI/CD ──
-    { name: "DevOps Professional", issuer: "PagerDuty", date: "Sep 2025" },
+    { name: "Linux Fundamentals (LFS101)", issuer: "The Linux Foundation", date: "Jul 2026" },
     { name: "Intro to CD & GitOps using Argo CD", issuer: "Akuity", date: "Nov 2025" },
     { name: "Backstage Fundamentals", issuer: "The Linux Foundation", date: "May 2026" },
-    { name: "Introduction to Jenkins", issuer: "The Linux Foundation", date: "Nov 2025" },
-    // ── Architecture & Agile ──
-    { name: "Agile Project Management Professional", issuer: "Atlassian", date: "Sep 2025" },
-    { name: "Scrum: The Basics", issuer: "Project Management Institute", date: "Sep 2025" },
-    { name: "Enterprise Architecture Foundations", issuer: "LinkedIn", date: "Aug 2025" },
-    { name: "Software Architecture Foundations", issuer: "LinkedIn", date: "Aug 2025" },
-    { name: "Introduction to Cybersecurity", issuer: "Cisco", date: "Aug 2025" },
-    // ── Languages ──
-    { name: "Oracle Java Foundations", issuer: "Oracle", date: "Aug 2025" },
+    { name: "DevOps Professional", issuer: "PagerDuty", date: "Sep 2025" },
   ],
 
   contact: {
-    intro: "Open to conversations about <b>Kubernetes, GitOps, and cloud-native infrastructure</b>. Reach out directly.",
+    intro: "Open to conversations about <b>platform engineering, Kubernetes, GitOps and reliability</b>. Reach out directly.",
     languages: [
       { lang: "Greek", level: "Native" },
       { lang: "English", level: "C2 Proficiency" },
