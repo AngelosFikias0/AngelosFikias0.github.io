@@ -66,7 +66,7 @@
         "name": "Angelos Fikias - Platform Engineer",
         "isPartOf": { "@id": "https://angelosfikias.dev/#website" },
         "mainEntity": { "@id": "https://angelosfikias.dev/#person" },
-        "dateModified": "2026-11-21",
+        "dateModified": "2026-11-24",
         "inLanguage": "en"
       },
       {
@@ -120,12 +120,14 @@
           "Backstage", "Azure", "Linux", "Python", "Java"
         ],
         "hasCredential": [
-          { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Fundamentals (AZ-900)", "credentialCategory": "certification", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
-          { "@type": "EducationalOccupationalCredential", "name": "Introduction to Kubernetes", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "The Linux Foundation" } },
-          { "@type": "EducationalOccupationalCredential", "name": "Linux Fundamentals (LFS101)", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "The Linux Foundation" } },
-          { "@type": "EducationalOccupationalCredential", "name": "Backstage Fundamentals", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "The Linux Foundation" } },
-          { "@type": "EducationalOccupationalCredential", "name": "Intro to Continuous Delivery & GitOps using Argo CD", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "Akuity" } },
-          { "@type": "EducationalOccupationalCredential", "name": "DevOps Professional", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "PagerDuty" } }
+          { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Fundamentals (AZ-900)", "credentialCategory": "certification", "recognizedBy": {"@type": "Organization", "name": "Microsoft" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Introduction to Kubernetes (LFS158)", "credentialCategory": "certificate", "recognizedBy": {"@type": "Organization", "name": "The Linux Foundation" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Manage Kubernetes in Google Cloud (Skill Badge)", "credentialCategory": "badge", "recognizedBy": {"@type": "Organization", "name": "Google Cloud" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Linux Fundamentals (LFS101)", "credentialCategory": "certificate", "recognizedBy": {"@type": "Organization", "name": "The Linux Foundation" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Backstage Fundamentals (LFS142)", "credentialCategory": "certificate", "recognizedBy": {"@type": "Organization", "name": "The Linux Foundation" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Intro to Continuous Delivery & GitOps using Argo CD", "credentialCategory": "certificate", "recognizedBy": {"@type": "Organization", "name": "Akuity" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Introduction to Jenkins", "credentialCategory": "certificate", "recognizedBy": {"@type": "Organization", "name": "The Linux Foundation" } },
+          { "@type": "EducationalOccupationalCredential", "name": "DevOps Professional Certificate", "credentialCategory": "certificate", "recognizedBy": {"@type": "Organization", "name": "PagerDuty" } }
         ],
         "sameAs": [
           "https://www.linkedin.com/in/angelos-fikias/",
@@ -1589,8 +1591,13 @@
 
       <h2>Projects</h2>
       <ul>
-        <li><strong>Platform &amp; Infrastructure Labs</strong> - Self-directed labs from kernel primitives to Kubernetes: <a href="https://github.com/AngelosFikias0/docker-lab">Docker Lab</a>, <a href="https://github.com/AngelosFikias0/backstage-gitops">Backstage IDP</a>, <a href="https://github.com/AngelosFikias0/jvm-lab">JVM Lab</a> and <a href="https://github.com/AngelosFikias0/iac-terraform">Terraform IaC</a>.</li>
-        <li><strong>Software &amp; Architecture Projects</strong> - Enterprise platforms designed in university team projects, from BPMN and TOGAF modelling to an AKS/Kafka microservices architecture: <a href="https://github.com/AngelosFikias0/resource-management-system">EfficienCity</a>, <a href="https://github.com/AngelosFikias0/Safe_car_insurance_System">SafeCar</a> and the <a href="https://github.com/AngelosFikias0/runners-app">Runners API</a> (Spring Boot, PostgreSQL, CI).</li>
+        <li><a href="https://github.com/AngelosFikias0/docker-lab">Docker Lab - Container Engineering</a> - 13-module lab from kernel primitives to Kubernetes, with CI/CD and Prometheus/Grafana alerting.</li>
+        <li><a href="https://github.com/AngelosFikias0/backstage-gitops">Backstage IDP Lab</a> - Self-hosted internal developer portal on Kubernetes with RBAC and a runbook.</li>
+        <li><a href="https://github.com/AngelosFikias0/jvm-lab">JVM Lab</a> - Runnable demos of JVM memory, garbage collection and cgroup-aware heap sizing.</li>
+        <li><a href="https://github.com/AngelosFikias0/runners-app">Runners API</a> - Spring Boot 3 REST API with PostgreSQL, RFC 9457 error handling, Actuator, Docker and CI.</li>
+        <li><a href="https://github.com/AngelosFikias0/resource-management-system">EfficienCity</a> - Municipal platform architecture: BPMN, AKS/Kafka microservices design, React MVP.</li>
+        <li><a href="https://github.com/AngelosFikias0/tikipark-mobile-app">TikiPark</a> - Android parking app with offline-first caching, Google Maps and a PHP/MySQL REST backend.</li>
+        <li><a href="https://github.com/AngelosFikias0/safe-car-insurance-system">SafeCar</a> - Insurance agency system: UML design with TOGAF/Zachman viewpoints and a Java prototype.</li>
       </ul>
 
       <h2>Experience</h2>
@@ -1602,12 +1609,14 @@
 
       <h2>Certifications</h2>
       <ul>
-        <li>Azure Fundamentals (AZ-900), Microsoft</li>
-        <li>Introduction to Kubernetes, The Linux Foundation</li>
+        <li>Microsoft Certified: Azure Fundamentals (AZ-900), Microsoft</li>
+        <li>Introduction to Kubernetes (LFS158), The Linux Foundation</li>
+        <li>Manage Kubernetes in Google Cloud (Skill Badge), Google Cloud</li>
         <li>Linux Fundamentals (LFS101), The Linux Foundation</li>
-        <li>Intro to CD &amp; GitOps using Argo CD, Akuity</li>
-        <li>Backstage Fundamentals, The Linux Foundation</li>
-        <li>DevOps Professional, PagerDuty</li>
+        <li>Backstage Fundamentals (LFS142), The Linux Foundation</li>
+        <li>Intro to Continuous Delivery &amp; GitOps using Argo CD, Akuity</li>
+        <li>Introduction to Jenkins, The Linux Foundation</li>
+        <li>DevOps Professional Certificate, PagerDuty</li>
       </ul>
 
       <h2>Contact</h2>
