@@ -1,6 +1,13 @@
+# Netlify-CDN-Cache-Control keeps responses in Netlify's shared durable cache so edge
+# nodes don't go back to origin on every request. Netlify purges it on each deploy,
+# so updates still go live immediately. Browsers still revalidate HTML on every visit.
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Netlify-CDN-Cache-Control: public, durable, s-maxage=31536000
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
